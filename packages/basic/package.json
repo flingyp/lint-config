@@ -1,0 +1,31 @@
+{
+  "name": "@flypeng/eslint-config-basic",
+  "version": "0.0.0",
+  "description": "flingyp's ESLint config",
+  "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
+  "license": "MIT",
+  "homepage": "https://github.com/flingyp/eslint-config",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -1,0 +1,31 @@
+module.exports = {
+  env: {
+    browser: true,
+    node: true,
+    es6: true,
+  },
+  reportUnusedDisableDirectives: true,
+  ignorePatterns: [
+    '*.min.*',
+    '*.d.ts',
+    'CHANGELOG.md',
+    'dist',
+    'LICENSE*',
+    'output',
+    'out',
+    'coverage',
+    'public',
+    'temp',
+    'package-lock.json',
+    'pnpm-lock.yaml',
+    'yarn.lock',
+    '__snapshots__',
+    '!.github',
+    '!.vitepress',
+    '!.vscode',
+  ],
+  extends: ['airbnb-base', 'plugin:import/recommended'],
+  rules: {
+    'no-unused-vars': 'warn',
+  },
+};
