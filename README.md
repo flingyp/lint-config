@@ -6,6 +6,7 @@
 - Lint also for json, yaml, markdown
 - Sorted imports, dangling commas
 - Reasonable defaults, best practices, only one-line of config
+- **Airbnb Base**
 - **Style principle**: Minimal for reading, stable for diff
 
 ## Usage
