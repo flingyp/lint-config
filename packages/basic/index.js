@@ -28,8 +28,10 @@ module.exports = {
   rules: {
     semi: ['error', 'never'],
     'no-console': 'off',
+    'import/extensions': 'off',
     'no-unused-vars': 'warn',
     'max-len': ['error', { code: 120 }],
+    'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: true, optionalDependencies: false, peerDependencies: false, bundledDependencies: false,
     }],
