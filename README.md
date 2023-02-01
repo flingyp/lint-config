@@ -1,12 +1,9 @@
 # @flypeng/eslint-config
 
-- Single quotes, no semi
+- Single quotes and no semi
 - Auto fix for formatting (aimed to be used standalone without Prettier)
-- Designed to work with TypeScript, Vue out-of-box
-- Lint also for json, yaml, markdown
-- Sorted imports, dangling commas
 - Reasonable defaults, best practices, only one-line of config
-- **Airbnb Base**
+- Based on **Airbnb base**
 - **Style principle**: Minimal for reading, stable for diff
 
 ## Usage
@@ -53,3 +50,11 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
   }
 }
 ```
+## Packages
+
+- [@flypeng/eslint-config](https://github.com/flingyp/eslint-config/tree/main/packages/all)
+  - ESlint config of packages integration
+- [@flypeng/eslint-config-basic](https://github.com/flingyp/eslint-config/tree/main/packages/basic)
+  - Javascript code style based on airbnb base
+- [@flypeng/eslint-config-typescript](https://github.com/flingyp/eslint-config/tree/main/packages/typescript)
+  - TypeScript code style base on [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
