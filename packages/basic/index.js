@@ -24,8 +24,12 @@ module.exports = {
     '!.vitepress',
     '!.vscode',
   ],
-  extends: ['airbnb-base', 'plugin:import/recommended'],
+  extends: ['eslint:recommended', 'airbnb-base', 'plugin:import/recommended'],
   rules: {
     'no-unused-vars': 'warn',
+    'max-len': ['error', { code: 120 }],
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true, optionalDependencies: false, peerDependencies: false, bundledDependencies: false,
+    }],
   },
 };

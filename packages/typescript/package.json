@@ -1,6 +1,6 @@
 {
-  "name": "@flypeng/eslint-config",
-  "version": "0.0.1",
+  "name": "@flypeng/eslint-config-typescript",
+  "version": "0.0.0",
   "description": "flingyp's ESLint config",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
@@ -18,11 +18,11 @@
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.33.0",
-    "local-pkg": "^0.4.3"
+    "eslint": "^8.33.0"
   },
   "dependencies": {
     "@flypeng/eslint-config-basic": "*",
-    "@flypeng/eslint-config-typescript": "*"
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0"
   }
 }
