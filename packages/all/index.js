@@ -12,4 +12,8 @@ if (VUE) eslintExtendsList.push('@flypeng/eslint-config-vue')
 
 module.exports = {
   extends: eslintExtendsList,
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module"
+  },
 }

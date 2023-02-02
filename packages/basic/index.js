@@ -28,6 +28,8 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'no-multi-assign': 'off',
+    'no-param-reassign': 'off',
+    'import/prefer-default-export': 'off',
     'import/extensions': 'off',
     'no-plusplus': 'off',
     'no-unused-vars': 'warn',
