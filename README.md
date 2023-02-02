@@ -14,8 +14,6 @@
 pnpm add -D local-pkg eslint @flypeng/eslint-config
 ```
 
-- Tip: `@flypeng/eslint-config` depends on `local-pkg`, so you need to install it.
-
 ### Config `.eslintrc`
 
 ```json
