@@ -58,3 +58,6 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
   - Javascript code style based on airbnb base
 - [@flypeng/eslint-config-typescript](https://github.com/flingyp/eslint-config/tree/main/packages/typescript)
   - TypeScript code style base on [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
+- [@flypeng/eslint-config-vue](https://github.com/flingyp/eslint-config/tree/main/packages/vue)
+  - Vue code style base on [eslint-plugin-vue](https://eslint.vuejs.org/)
+

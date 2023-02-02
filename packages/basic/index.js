@@ -26,14 +26,19 @@ module.exports = {
   ],
   extends: ['eslint:recommended', 'airbnb-base', 'plugin:import/recommended'],
   rules: {
-    semi: ['error', 'never'],
     'no-console': 'off',
+    'no-multi-assign': 'off',
     'import/extensions': 'off',
+    'no-plusplus': 'off',
     'no-unused-vars': 'warn',
+    semi: ['error', 'never'],
     'max-len': ['error', { code: 120 }],
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: true, optionalDependencies: false, peerDependencies: false, bundledDependencies: false,
+    }],
+    'no-use-before-define': ['error', {
+      functions: false, classes: false, variables: true, allowNamedExports: true,
     }],
   },
 }

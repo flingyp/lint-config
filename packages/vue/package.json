@@ -1,5 +1,5 @@
 {
-  "name": "@flypeng/eslint-config",
+  "name": "@flypeng/eslint-config-vue",
   "version": "0.0.3",
   "description": "flingyp's ESLint config",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
@@ -18,12 +18,11 @@
     "eslint": ">=7.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.33.0",
-    "local-pkg": "^0.4.3"
+    "eslint": "^8.33.0"
   },
   "dependencies": {
     "@flypeng/eslint-config-basic": "*",
-    "@flypeng/eslint-config-typescript": "*",
-    "@flypeng/eslint-config-vue": "*"
+    "eslint-plugin-vue": "^9.9.0",
+    "vue-eslint-parser": "^9.1.0"
   }
 }
