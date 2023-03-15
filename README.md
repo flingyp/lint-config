@@ -11,7 +11,7 @@
 ### Install
 
 ```bash
-pnpm add -D local-pkg eslint @flypeng/eslint-config
+pnpm add -D eslint @flypeng/eslint-config
 ```
 
 ### Config `.eslintrc`

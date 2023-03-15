@@ -18,12 +18,12 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@flypeng/eslint-config-basic": "*",
-    "@flypeng/eslint-config-typescript": "*",
-    "@flypeng/eslint-config-vue": "*",
+    "@flypeng/eslint-config-basic": "^0.0.9",
+    "@flypeng/eslint-config-typescript": "^0.0.9",
+    "@flypeng/eslint-config-vue": "^0.0.9",
     "local-pkg": "^0.4.3"
   },
   "devDependencies": {
-    "eslint": "^8.33.0"
+    "eslint": "^8.36.0"
   }
 }
