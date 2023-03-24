@@ -8,7 +8,7 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
         '@typescript-eslint/ban-types': 'off',
-        '@typescript-eslint/ban-ts-comment': 'warn',
+        '@typescript-eslint/ban-ts-comment': 'off',
       },
     },
   ],
