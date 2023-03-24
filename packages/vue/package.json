@@ -18,7 +18,7 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@flypeng/eslint-config-basic": "^0.0.9",
+    "@flypeng/eslint-config-basic": "*",
     "eslint-plugin-vue": "^9.9.0",
     "vue-eslint-parser": "^9.1.0"
   },
