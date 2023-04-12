@@ -34,6 +34,7 @@ module.exports = {
     'plugin:markdown/recommended',
   ],
   rules: {
+    'no-undef': 'off',
     'no-console': 'off',
     'no-tabs': 'off',
     'no-multi-assign': 'off',

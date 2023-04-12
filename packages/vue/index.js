@@ -11,7 +11,6 @@ module.exports = {
         'plugin:vue/vue3-recommended',
       ],
       rules: {
-        'no-undef': 'off',
         'vue/multi-word-component-names': 'off',
       },
     },
