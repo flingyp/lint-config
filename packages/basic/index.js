@@ -189,6 +189,8 @@ module.exports = {
       // Code blocks in markdown file
       files: ['**/*.md/*.*'],
       rules: {
+        camelcase: 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-redeclare': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
@@ -204,6 +206,7 @@ module.exports = {
         'no-undef': 'off',
         'no-unused-expressions': 'off',
         'no-unused-vars': 'off',
+        'no-redeclare': 'off',
       },
     },
   ],
