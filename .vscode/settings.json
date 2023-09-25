@@ -3,6 +3,7 @@
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
     "source.organizeImports": false
   },
   "eslint.validate": [
@@ -16,5 +17,14 @@
     "json",
     "jsonc",
     "yaml"
+  ],
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "css",
+    "less",
+    "scss",
+    "sass",
+    "html",
+    "vue"
   ]
 }

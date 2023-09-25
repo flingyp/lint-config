@@ -1,0 +1,25 @@
+{
+  "name": "@flypeng/stylelint-config",
+  "version": "0.0.0",
+  "description": "flingyp's StyleLint config",
+  "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
+  "license": "MIT",
+  "homepage": "https://github.com/flingyp/lint-config",
+  "keywords": [
+    "stylelint",
+    "stylelintplugin",
+    "stylelint-plugin"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "local-pkg": "^0.4.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.2.1"
+  }
+}
