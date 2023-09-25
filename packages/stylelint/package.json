@@ -14,7 +14,7 @@
   "files": [
     "index.js"
   ],
-  "devDependencies": {
+  "dependencies": {
     "local-pkg": "^0.4.3",
     "stylelint": "^15.10.3",
     "stylelint-config-recommended-vue": "^1.5.0",
