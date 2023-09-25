@@ -1,6 +1,6 @@
 {
   "name": "@flypeng/stylelint-config",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "flingyp's StyleLint config",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
