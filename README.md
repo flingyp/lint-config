@@ -1,4 +1,4 @@
-# @flypeng/eslint-config
+# @flypeng/lint-config
 
 - Single quotes and no semi
 - Auto fix for formatting (aimed to be used standalone without Prettier)
@@ -11,14 +11,20 @@
 ### Install
 
 ```bash
-pnpm add -D eslint @flypeng/eslint-config
+pnpm add -D eslint stylelint @flypeng/eslint-config @flypeng/stylelint-config
 ```
 
-### Config `.eslintrc`
+### Config `.eslintrc`、`.stylelintrc`
 
 ```json
 {
   "extends": "@flypeng"
+}
+```
+
+```json
+{
+  "extends": "@flypeng/stylelint-config"
 }
 ```
 
@@ -31,8 +37,8 @@ For example:
 ```json
 {
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . && stylelint \"**/*.{css,scss,less}\"",
+    "lint:fix": "eslint . --fix && stylelint \"**/*.{css,scss,less}\" --fix"
   }
 }
 ```
@@ -44,9 +50,11 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
 ```json
 {
   "prettier.enable": false,
+  "stylelint.enable": true,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
     "source.organizeImports": false
   },
   "eslint.validate": [
@@ -60,6 +68,14 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
     "json",
     "jsonc",
     "yaml"
+  ],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "scss",
+    "sass",
+    "html",
+    "vue"
   ]
 }
 ```
@@ -73,4 +89,6 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
   - TypeScript code style base on [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
 - [@flypeng/eslint-config-vue](https://github.com/flingyp/eslint-config/tree/main/packages/vue)
   - Vue code style base on [eslint-plugin-vue](https://eslint.vuejs.org/)
+- [@flypeng/stylelint-config](https://github.com/flingyp/eslint-config/tree/main/packages/stylelint)
+  - Style style base on [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
 
