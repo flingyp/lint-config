@@ -25,6 +25,7 @@ const ignoreFiles = [
   '**/*.json',
   '**/*.md',
   '**/*.yaml',
+  'dist',
 ]
 
 module.exports = {
@@ -42,5 +43,8 @@ module.exports = {
       'width',
       'height',
     ],
+    'at-rule-no-unknown': null,
+    'custom-property-pattern': null,
+    'selector-class-pattern': null,
   },
 }
