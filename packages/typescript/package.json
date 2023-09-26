@@ -18,7 +18,6 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@flypeng/eslint-config-basic": "^0.0.12",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0"
   },

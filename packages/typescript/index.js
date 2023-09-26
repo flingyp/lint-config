@@ -3,7 +3,7 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
       parser: '@typescript-eslint/parser',
-      extends: ['plugin:@typescript-eslint/recommended', '@flypeng/eslint-config-basic'],
+      extends: ['plugin:@typescript-eslint/recommended'],
       plugins: ['@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
