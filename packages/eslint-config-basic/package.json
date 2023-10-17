@@ -1,16 +1,14 @@
 {
-    "name": "@flypeng/eslint-config-javascript",
+    "name": "@flypeng/eslint-config-basic",
     "version": "0.0.0",
-    "description": "flingyp's lint config of JavaScript",
+    "description": "flingyp's basic config of ESlint",
     "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
     "license": "MIT",
     "homepage": "https://github.com/flingyp/lint-config",
     "keywords": [
         "lint",
         "eslint",
-        "ESLint Config",
-        "Javascript ESlint Config",
-        "Airbnb Javascript Style"
+        "ESLint Basic Config"
     ],
     "main": "index.js",
     "files": [
@@ -18,9 +16,5 @@
     ],
     "peerDependencies": {
         "eslint": ">=8.0.0"
-    },
-    "dependencies": {
-        "@flypeng/eslint-config-basic": "workspace:^",
-        "eslint-config-airbnb-base": "^15.0.0"
     }
 }
