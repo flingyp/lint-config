@@ -1,0 +1,11 @@
+{
+    "name": "@flypeng/lint-config-monorepo",
+    "private": true,
+    "packageManager": "pnpm@8.5.1",
+    "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
+    "license": "MIT",
+    "scripts": {},
+    "devDependencies": {
+        "@flypeng/eslint-config-basic": "workspace:^"
+    }
+}

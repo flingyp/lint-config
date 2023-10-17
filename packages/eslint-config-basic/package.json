@@ -1,0 +1,20 @@
+{
+    "name": "@flypeng/eslint-config-basic",
+    "version": "0.0.0",
+    "description": "flingyp's eslint basic config",
+    "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
+    "license": "MIT",
+    "homepage": "https://github.com/flingyp/lint-config",
+    "keywords": [
+        "lint",
+        "eslint",
+        "eslint config"
+    ],
+    "main": "index.js",
+    "files": [
+        "index.js"
+    ],
+    "peerDependencies": {
+        "eslint": ">=7.4.0"
+    }
+}
