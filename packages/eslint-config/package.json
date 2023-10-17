@@ -1,14 +1,14 @@
 {
-  "name": "@flypeng/eslint-config-basic",
+  "name": "@flypeng/eslint-config",
   "version": "0.0.0",
-  "description": "flingyp's basic config of Common",
+  "description": "flingyp's lint config of ESLint",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
   "homepage": "https://github.com/flingyp/lint-config",
   "keywords": [
     "lint",
     "eslint",
-    "ESLint Basic Config"
+    "ESLint Config"
   ],
   "main": "index.js",
   "files": [
@@ -16,5 +16,10 @@
   ],
   "peerDependencies": {
     "eslint": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@flypeng/eslint-config-basic": "workspace:^",
+    "@flypeng/eslint-config-javascript": "workspace:^",
+    "@flypeng/eslint-config-other": "workspace:^"
   }
 }

@@ -4,7 +4,6 @@ module.exports = {
       files: ['*.js'],
       extends: [
         'eslint-config-airbnb-base',
-        '@flypeng/eslint-config-basic',
       ],
     },
   ],
