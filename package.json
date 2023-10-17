@@ -6,6 +6,6 @@
     "license": "MIT",
     "scripts": {},
     "devDependencies": {
-        "@flypeng/eslint-config-basic": "workspace:^"
+        "@flypeng/eslint-config-javascript": "workspace:^"
     }
 }
