@@ -1,7 +1,7 @@
 {
-  "name": "@flypeng/eslint-config-typescript",
+  "name": "@flypeng/eslint-config-vue",
   "version": "0.0.0",
-  "description": "flingyp's lint config of TypeScript",
+  "description": "flingyp's lint config of Vue",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
   "homepage": "https://github.com/flingyp/lint-config",
@@ -9,7 +9,7 @@
     "lint",
     "eslint",
     "ESLint Config",
-    "TypeScript ESlint Config"
+    "Vue ESlint Config"
   ],
   "main": "index.js",
   "files": [
@@ -19,7 +19,7 @@
     "eslint": ">=8.0.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.8.0",
-    "@typescript-eslint/parser": "^6.8.0"
+    "eslint-plugin-vue": "^9.17.0",
+    "vue-eslint-parser": "^9.3.2"
   }
 }

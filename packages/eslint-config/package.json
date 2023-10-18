@@ -23,6 +23,7 @@
     "@flypeng/eslint-config-javascript": "workspace:^",
     "@flypeng/eslint-config-other": "workspace:^",
     "@flypeng/eslint-config-typescript": "workspace:^",
+    "@flypeng/eslint-config-vue": "workspace:^",
     "local-pkg": "^0.5.0"
   }
 }

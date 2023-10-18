@@ -4,6 +4,7 @@ const { isPackageExists } = require('local-pkg');
 const extendsList = ['@flypeng/eslint-config-javascript', '@flypeng/eslint-config-other'];
 
 (isPackageExists('typescript')) && (extendsList.push('@flypeng/eslint-config-typescript'));
+(isPackageExists('vue') && (extendsList.push('@flypeng/eslint-config-vue')));
 
 extendsList.push('@flypeng/eslint-config-basic');
 

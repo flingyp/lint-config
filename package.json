@@ -12,5 +12,8 @@
     "@flypeng/eslint-config": "workspace:^",
     "eslint": "^8.51.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
   }
 }
