@@ -1,0 +1,16 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "@flypeng/eslint-config": "0.0.0",
+    "@flypeng/eslint-config-basic": "0.0.0",
+    "@flypeng/eslint-config-javascript": "0.0.0",
+    "@flypeng/eslint-config-other": "0.0.0",
+    "@flypeng/eslint-config-react": "0.0.0",
+    "@flypeng/eslint-config-typescript": "0.0.0",
+    "@flypeng/eslint-config-vue": "0.0.0"
+  },
+  "changesets": [
+    "slimy-swans-watch"
+  ]
+}

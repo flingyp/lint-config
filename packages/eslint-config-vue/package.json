@@ -1,6 +1,6 @@
 {
   "name": "@flypeng/eslint-config-vue",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "flingyp's lint config of Vue",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
