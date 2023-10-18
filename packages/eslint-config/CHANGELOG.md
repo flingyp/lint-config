@@ -1,5 +1,13 @@
 # @flypeng/eslint-config
 
+## 1.0.0-alpha.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @flypeng/eslint-config-typescript@1.0.0-alpha.1
+  - @flypeng/eslint-config-basic@1.0.0-alpha.1
+
 ## 1.0.0-alpha.0
 
 ### Major Changes

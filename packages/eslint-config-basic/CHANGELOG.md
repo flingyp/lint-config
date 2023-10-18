@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-basic
 
+## 1.0.0-alpha.1
+
+### Patch Changes
+
+- add basic rules and typescript rule
+
 ## 1.0.0-alpha.0
 
 ### Major Changes

@@ -11,6 +11,7 @@
     "@flypeng/eslint-config-vue": "0.0.0"
   },
   "changesets": [
+    "gold-papayas-worry",
     "slimy-swans-watch"
   ]
 }
