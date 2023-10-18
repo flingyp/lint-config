@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "eslint-plugin-jsonc": "^2.10.0",
+    "eslint-plugin-markdown": "^3.0.1",
     "jsonc-eslint-parser": "^2.3.0"
   }
 }

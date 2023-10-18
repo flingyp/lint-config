@@ -1,10 +1,11 @@
 module.exports = {
+  extends: [
+    'plugin:jsonc/recommended-with-jsonc',
+    'plugin:markdown/recommended',
+  ],
   overrides: [
     {
       files: ['*.json', '*.json5', '*.jsonc'],
-      extends: [
-        'plugin:jsonc/recommended-with-jsonc',
-      ],
       parser: 'jsonc-eslint-parser',
       rules: {
         'jsonc/array-bracket-spacing': ['error', 'never'],
@@ -17,6 +18,14 @@ module.exports = {
         'jsonc/object-curly-spacing': ['error', 'always'],
         'jsonc/object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
       },
+    },
+    {
+      files: ['**/*.md'],
+      processor: 'markdown/markdown',
+    },
+    {
+      files: ['**/*.md/*.*'],
+      rules: {},
     },
   ],
 };
