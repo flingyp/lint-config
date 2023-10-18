@@ -1,5 +1,11 @@
 # @flypeng/lint-config
 
+- Single quotes, Semi
+- Based on Airbnb code style
+- Auto fix and no dependence on Prettier
+- Easy integration and configuration, customized rules
+- Support for multiple file type code checking
+
 ## 🏍️ Packages
 
 - `@flypeng/eslint-config`  
