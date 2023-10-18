@@ -1,10 +1,5 @@
 module.exports = {
-  overrides: [
-    {
-      files: ['*.js'],
-      extends: [
-        'eslint-config-airbnb-base',
-      ],
-    },
+  extends: [
+    'eslint-config-airbnb-base',
   ],
 };
