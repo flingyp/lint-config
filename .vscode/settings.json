@@ -10,6 +10,8 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
+    "jsx",
+    "tsx",
     "vue",
     "html",
     "markdown",
@@ -26,4 +28,5 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
 }

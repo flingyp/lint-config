@@ -5,6 +5,7 @@ const extendsList = ['@flypeng/eslint-config-javascript', '@flypeng/eslint-confi
 
 (isPackageExists('typescript')) && (extendsList.push('@flypeng/eslint-config-typescript'));
 (isPackageExists('vue') && (extendsList.push('@flypeng/eslint-config-vue')));
+(isPackageExists('react') && (extendsList.push('@flypeng/eslint-config-react')));
 
 extendsList.push('@flypeng/eslint-config-basic');
 

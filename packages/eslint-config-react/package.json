@@ -1,0 +1,24 @@
+{
+  "name": "@flypeng/eslint-config-react",
+  "version": "0.0.0",
+  "description": "flingyp's lint config of React",
+  "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
+  "license": "MIT",
+  "homepage": "https://github.com/flingyp/lint-config",
+  "keywords": [
+    "lint",
+    "eslint",
+    "ESLint Config",
+    "React ESlint Config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "dependencies": {
+    "eslint-plugin-react": "^7.33.2"
+  }
+}
