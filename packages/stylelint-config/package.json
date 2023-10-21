@@ -1,0 +1,28 @@
+{
+  "name": "@flypeng/stylelint-config",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "flingyp's lint config of Style",
+  "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
+  "license": "MIT",
+  "homepage": "https://github.com/flingyp/lint-config",
+  "keywords": [
+    "lint",
+    "Stylelint",
+    "Stylelint Config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "stylelint": ">=15.0.0"
+  },
+  "dependencies": {
+    "local-pkg": "^0.5.0",
+    "postcss-html": "^1.5.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.0.0"
+  }
+}

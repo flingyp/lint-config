@@ -1,8 +1,4 @@
 {
-  "cSpell.words": [
-    "flingyp",
-    "flypeng"
-  ],
   "eslint.enable": true,
   "eslint.format.enable": true,
   "eslint.validate": [
@@ -20,13 +16,35 @@
     "json5",
     "yaml"
   ],
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "css",
+    "less",
+    "scss",
+    "vue",
+    "postcss"
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.organizeImports": false
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "cSpell.words": [
+    "flingyp",
+    "flypeng",
+    "stylelint"
+  ],
   "typescript.tsdk": "node_modules\\typescript\\lib",
 }

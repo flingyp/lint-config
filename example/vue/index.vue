@@ -13,3 +13,9 @@ const add = (value: number) => {
     {{ message }} - {{ sumVueValue }}
   </div>
 </template>
+
+<style scoped lang="scss">
+.body {
+  color: #999000;
+}
+</style>

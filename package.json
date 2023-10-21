@@ -5,13 +5,16 @@
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
   "scripts": {
-    "lint:eslint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . && stylelint .",
+    "lint:fix": "eslint . --fix && stylelint . --fix"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "@flypeng/eslint-config": "workspace:^",
+    "@flypeng/stylelint-config": "workspace:^",
     "eslint": "^8.51.0",
+    "scss": "^0.2.4",
+    "stylelint": "^15.11.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
