@@ -1,4 +1,10 @@
 {
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+  },
   "eslint.enable": true,
   "eslint.format.enable": true,
   "eslint.validate": [
@@ -16,21 +22,18 @@
     "json5",
     "yaml"
   ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "stylelint.enable": true,
   "stylelint.validate": [
     "css",
     "less",
     "scss",
+    "sass",
     "vue",
     "postcss"
   ],
-  "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
-    "source.organizeImports": "explicit"
-  },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },

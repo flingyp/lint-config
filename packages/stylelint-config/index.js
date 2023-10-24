@@ -1,10 +1,8 @@
 const { isPackageExists } = require('local-pkg');
 
-const extendsList = [];
+const extendsList = ['stylelint-config-standard'];
 
-extendsList.push('stylelint-config-standard');
-
-(isPackageExists('scss')) && (extendsList.push('stylelint-config-standard-scss'));
+isPackageExists('scss') && (extendsList.push('stylelint-config-standard-scss'));
 
 if (isPackageExists('vue')) {
   if (isPackageExists('scss')) {

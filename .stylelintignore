@@ -1,6 +1,5 @@
-dist
-node_modules
-
+*.min.css
+ 
 *.js
 *.jsx
 *.ts
@@ -11,3 +10,8 @@ node_modules
 *.yaml
 *.yml
 *.html
+ 
+/test/
+/dist/
+/node_modules/
+/lib/

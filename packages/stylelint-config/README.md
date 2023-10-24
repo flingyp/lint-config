@@ -1,5 +1,7 @@
 # @flypeng/stylelint-config
 
+> Stylelint 主要用于检测和强制执行 CSS 和 CSS 预处理器（如Sass、Less）的编码规范，以确保代码的一致性和质量。与代码缩进和格式化不同，Stylelint 的主要焦点是检查规则、属性、选择器、命名约定等方面的问题，而不是缩进或格式问题。
+
 针对 样式文件（CSS、SCSS 和 Vue） 代码规范扩展
 
 ## 扩展包
