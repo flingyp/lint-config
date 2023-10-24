@@ -2,7 +2,7 @@ const { isPackageExists } = require('local-pkg');
 
 const extendsList = ['stylelint-config-standard'];
 
-isPackageExists('scss') && (extendsList.push('stylelint-config-standard-scss'));
+isPackageExists('scss') && extendsList.push('stylelint-config-standard-scss');
 
 if (isPackageExists('vue')) {
   if (isPackageExists('scss')) {
@@ -18,10 +18,7 @@ extendsList.push('stylelint-prettier/recommended');
 module.exports = {
   cache: true,
   fix: true,
-  plugins: [
-    'stylelint-order',
-    'stylelint-config-rational-order/plugin',
-  ],
+  plugins: ['stylelint-order', 'stylelint-config-rational-order/plugin'],
   extends: extendsList,
   overrides: [
     {

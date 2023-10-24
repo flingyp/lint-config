@@ -10,12 +10,12 @@
 
 ## 🏍️ Packages
 
-- `@flypeng/eslint-config`  
-    - `@flypeng/eslint-config-javascript`
-    - `@flypeng/eslint-config-typescript`
-    - `@flypeng/eslint-config-vue`
-    - `@flypeng/eslint-config-react`
-    - `@flypeng/eslint-config-other`
+- `@flypeng/eslint-config`
+  - `@flypeng/eslint-config-javascript`
+  - `@flypeng/eslint-config-typescript`
+  - `@flypeng/eslint-config-vue`
+  - `@flypeng/eslint-config-react`
+  - `@flypeng/eslint-config-other`
 - `@flypeng/stylelint-config`
 
 ## 🏃 How to integrate it
@@ -69,6 +69,3 @@ Install VSCode **ESLint**、**Stylelint** extension and create `.vscode/settings
   }
 }
 ```
-
-
-

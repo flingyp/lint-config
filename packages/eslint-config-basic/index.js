@@ -20,11 +20,23 @@ module.exports = {
     eqeqeq: 'warn',
     'max-len': 'off',
     'import/no-unresolved': 'off',
-    'import/no-extraneous-dependencies': ['error', {
-      devDependencies: true, optionalDependencies: false, peerDependencies: false, bundledDependencies: false,
-    }],
-    'no-use-before-define': ['error', {
-      functions: false, classes: false, variables: true, allowNamedExports: true,
-    }],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+        optionalDependencies: false,
+        peerDependencies: false,
+        bundledDependencies: false,
+      },
+    ],
+    'no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: false,
+        variables: true,
+        allowNamedExports: true,
+      },
+    ],
   },
 };
