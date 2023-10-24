@@ -16,15 +16,17 @@
     "index.js"
   ],
   "peerDependencies": {
-    "eslint": ">=8.0.0"
+    "eslint": ">=8.0.0",
+    "stylelint": ">=15.0.0"
   },
   "dependencies": {
     "@flypeng/eslint-config-basic": "workspace:^",
     "@flypeng/eslint-config-javascript": "workspace:^",
     "@flypeng/eslint-config-other": "workspace:^",
+    "@flypeng/eslint-config-react": "workspace:^",
     "@flypeng/eslint-config-typescript": "workspace:^",
     "@flypeng/eslint-config-vue": "workspace:^",
-    "@flypeng/eslint-config-react": "workspace:^",
+    "eslint-config-prettier": "^9.0.0",
     "local-pkg": "^0.5.0"
   }
 }

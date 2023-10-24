@@ -1,9 +1,10 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
     "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
+    "source.fixAll.stylelint": true
   },
   "eslint.enable": true,
   "eslint.format.enable": true,
@@ -26,18 +27,7 @@
   "less.validate": false,
   "scss.validate": false,
   "stylelint.enable": true,
-  "stylelint.validate": [
-    "css",
-    "less",
-    "scss",
-    "sass",
-    "vue",
-    "postcss"
-  ],
-  "cSpell.words": [
-    "flingyp",
-    "flypeng",
-    "stylelint"
-  ],
-  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "stylelint.validate": ["css", "less", "scss", "sass", "vue", "postcss"],
+  "cSpell.words": ["flingyp", "flypeng", "stylelint"],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }
