@@ -9,7 +9,6 @@
 *.json
 *.yaml
 *.yml
-*.html
  
 /test/
 /dist/

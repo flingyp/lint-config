@@ -23,4 +23,10 @@ module.exports = {
     'stylelint-config-rational-order/plugin',
   ],
   extends: extendsList,
+  overrides: [
+    {
+      files: ['*.html', '**/*.html'],
+      customSyntax: 'postcss-html',
+    },
+  ],
 };

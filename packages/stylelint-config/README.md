@@ -10,4 +10,5 @@
 - [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss) Styleint 的标准可共享 SCSS 配置
 - [stylelint-config-recommended-vue](https://github.com/ota-meshi/stylelint-config-recommended-vue) Styleint 推荐的可共享 Vue 配置
 - [stylelint-config-rational-order](https://github.com/constverum/stylelint-config-rational-order) 按合理顺序分组来对相关属性声明进行排序的样式配置
+- [postcss-html](https://github.com/ota-meshi/postcss-html) 用于解析 HTML（和类似 HTML）的 PostCSS 语法
 - [stylelint-prettier](https://github.com/prettier/stylelint-prettier) 用于 Prettier 格式化的 Stylelint 插件
