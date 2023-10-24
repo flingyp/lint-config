@@ -14,8 +14,14 @@ if (isPackageExists('vue')) {
   }
 }
 
+extendsList.push('stylelint-config-rational-order');
+
 module.exports = {
   cache: true,
   fix: true,
+  plugins: [
+    'stylelint-order',
+    'stylelint-config-rational-order/plugin',
+  ],
   extends: extendsList,
 };
