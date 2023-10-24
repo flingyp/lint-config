@@ -13,6 +13,7 @@ if (isPackageExists('vue')) {
 }
 
 extendsList.push('stylelint-config-rational-order');
+extendsList.push('stylelint-prettier/recommended');
 
 module.exports = {
   cache: true,
