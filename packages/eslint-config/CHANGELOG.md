@@ -1,5 +1,12 @@
 # @flypeng/eslint-config
 
+## 1.0.0-alpha.2
+
+### Patch Changes
+
+- Updated dependencies
+  - @flypeng/eslint-config-basic@1.0.0-alpha.2
+
 ## 1.0.0-alpha.1
 
 ### Patch Changes

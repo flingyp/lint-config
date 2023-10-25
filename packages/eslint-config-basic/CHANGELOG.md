@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-basic
 
+## 1.0.0-alpha.2
+
+### Patch Changes
+
+- feat: add basic config on @flypeng/eslint-config-basic
+
 ## 1.0.0-alpha.1
 
 ### Patch Changes
