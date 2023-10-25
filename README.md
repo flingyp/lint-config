@@ -3,10 +3,10 @@
 ![@flypeng/eslint-config](https://img.shields.io/npm/v/%40flypeng%2Feslint-config?style=plastic&logo=npm&label=%40flypeng%2Feslint-config&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40flypeng%2Feslint-config) ![@flypeng/stylelint-config](https://img.shields.io/npm/v/%40flypeng%2Fstylelint-config?style=plastic&logo=npm&label=%40flypeng%2Fstylelint-config&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40flypeng%2Fstylelint-config)
 
 - Single quotes, Semi
-- Based on Airbnb code style
-- Auto fix and no dependence on Prettier
-- Easy integration and configuration, customized rules
-- Support for multiple file type code checking
+- Share ESLint and Stylelint configurations
+- Code lint check based on Airbnb
+- Code formatting based on Prettier
+- Easy to integrate, configure, and customize rules
 
 ## 🏍️ Packages
 
@@ -18,11 +18,11 @@
   - `@flypeng/eslint-config-other`
 - `@flypeng/stylelint-config`
 
-## 🏃 How to integrate it
+## 🏃 Integration
 
 ### Install packages
 
-`pnpm add eslint stylelint @flypeng/eslint-config @flypeng/stylelint-config -D`
+`pnpm add eslint stylelint prettier @flypeng/eslint-config @flypeng/stylelint-config -D`
 
 ### Config `.eslintrc`、`.stylelintrc`
 
@@ -38,12 +38,62 @@
 }
 ```
 
-### Config VSCode for auto fix
+### Config `.stylelintignore`
+
+```
+*.min.css
+
+*.js
+*.jsx
+*.ts
+*.tsx
+*.d.ts
+*.md
+*.json
+*.yaml
+*.yml
+
+/test/
+/dist/
+/node_modules/
+/lib/
+```
+
+### Config `.prettierrc` and `.prettierignore`
+
+```
+{
+  "semi": true,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "vueIndentScriptAndStyle": false
+}
+```
+
+```
+/dist/*
+.local
+.output.js
+/node_modules/**
+**/*.svg
+**/*.sh
+/public/*
+**/*.yaml
+```
+
+### Config VSCode
 
 Install VSCode **ESLint**、**Stylelint** extension and create `.vscode/settings.json`
 
 ```json
 {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
   "eslint.enable": true,
   "eslint.format.enable": true,
   "eslint.validate": [
@@ -51,6 +101,8 @@ Install VSCode **ESLint**、**Stylelint** extension and create `.vscode/settings
     "javascriptreact",
     "typescript",
     "typescriptreact",
+    "jsx",
+    "tsx",
     "vue",
     "html",
     "markdown",
@@ -59,13 +111,10 @@ Install VSCode **ESLint**、**Stylelint** extension and create `.vscode/settings
     "json5",
     "yaml"
   ],
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "scss", "sass", "vue", "postcss"]
 }
 ```
