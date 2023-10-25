@@ -83,9 +83,20 @@
 **/*.yaml
 ```
 
+### Config Script
+
+```json
+{
+  "scripts": {
+    "lint": "prettier . --write && eslint . && stylelint .",
+    "lint:fix": "prettier . --write && eslint . --fix && stylelint . --fix"
+  }
+}
+```
+
 ### Config VSCode
 
-Install VSCode **ESLint**、**Stylelint** extension and create `.vscode/settings.json`
+Install VSCode **ESLint**、**Stylelint**、**Prettier**、**Prettier ESLint** plugins and create `.vscode/settings.json`
 
 ```json
 {
