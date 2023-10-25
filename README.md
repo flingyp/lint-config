@@ -2,6 +2,8 @@
 
 ![@flypeng/eslint-config](https://img.shields.io/npm/v/%40flypeng%2Feslint-config?style=plastic&logo=npm&label=%40flypeng%2Feslint-config&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40flypeng%2Feslint-config) ![@flypeng/stylelint-config](https://img.shields.io/npm/v/%40flypeng%2Fstylelint-config?style=plastic&logo=npm&label=%40flypeng%2Fstylelint-config&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40flypeng%2Fstylelint-config)
 
+> `@flypeng/eslint-config` 目前使用的是ESLint旧的配置系统。[官方文档](https://eslint.org/docs/latest/use/configure/configuration-files)
+
 - Single quotes, Semi
 - Share ESLint and Stylelint configurations
 - Code lint check based on Airbnb
