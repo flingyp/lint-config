@@ -68,8 +68,8 @@
 ```json
 {
   "scripts": {
-    "lint": "prettier . --write && eslint . && stylelint .",
-    "lint:fix": "prettier . --write && eslint . --fix && stylelint . --fix"
+    "lint": "prettier . --write && eslint . && stylelint \"**/*.{css,scss,vue}\"",
+    "lint:fix": "prettier . --write && eslint . --fix && stylelint . --fix \"**/*.{css,scss,vue}\""
   }
 }
 ```
