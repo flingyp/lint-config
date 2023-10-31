@@ -47,6 +47,7 @@
   "semi": true,
   "singleQuote": true,
   "bracketSpacing": true,
+  "printWidth": 120,
   "vueIndentScriptAndStyle": false
 }
 ```
