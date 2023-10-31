@@ -1,5 +1,11 @@
 # @flypeng/stylelint-config
 
+## 1.0.1-alpha.3
+
+### Patch Changes
+
+- fix: glob pattern string fix
+
 ## 1.0.1-alpha.2
 
 ### Patch Changes
