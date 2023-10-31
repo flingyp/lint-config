@@ -1,5 +1,11 @@
 # @flypeng/stylelint-config
 
+## 1.0.1-alpha.2
+
+### Patch Changes
+
+- feat: stylelint add ignoreFiles config
+
 ## 1.0.1-alpha.1
 
 ### Patch Changes
