@@ -16,7 +16,7 @@ extendsList.push('stylelint-config-rational-order');
 extendsList.push('stylelint-prettier/recommended');
 
 const cwd = process.cwd();
-const ignoreFilesPath = `${cwd}/**/*.!(css,scss,vue)`;
+const ignoreFilesPath = `${cwd}/**/*.!{css,scss,vue}`;
 
 module.exports = {
   cache: true,
