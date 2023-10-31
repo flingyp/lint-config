@@ -40,27 +40,6 @@
 }
 ```
 
-### Config `.stylelintignore`
-
-```
-*.min.css
-
-*.js
-*.jsx
-*.ts
-*.tsx
-*.d.ts
-*.md
-*.json
-*.yaml
-*.yml
-
-/test/
-/dist/
-/node_modules/
-/lib/
-```
-
 ### Config `.prettierrc` and `.prettierignore`
 
 ```
@@ -108,7 +87,6 @@ Install VSCode **ESLint**、**Stylelint**、**Prettier**、**Prettier ESLint** p
     "source.fixAll.stylelint": true
   },
   "eslint.enable": true,
-  "eslint.format.enable": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
