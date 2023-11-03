@@ -1,6 +1,6 @@
 {
   "name": "@flypeng/eslint-config",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0",
   "type": "commonjs",
   "description": "flingyp's lint config of ESLint",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",

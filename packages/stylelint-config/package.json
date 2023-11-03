@@ -1,7 +1,7 @@
 {
   "name": "@flypeng/stylelint-config",
   "type": "commonjs",
-  "version": "1.0.1-alpha.4",
+  "version": "1.0.1",
   "description": "flingyp's lint config of Style",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",

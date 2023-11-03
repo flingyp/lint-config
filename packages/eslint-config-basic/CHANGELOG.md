@@ -1,5 +1,16 @@
 # @flypeng/eslint-config-basic
 
+## 1.0.0
+
+### Major Changes
+
+- 10d9810: 重构 `@flypeng/eslint-config` 相关依赖包V0版本
+
+### Patch Changes
+
+- d6c983b: feat: add basic config on @flypeng/eslint-config-basic
+- abfc665: add basic rules and typescript rule
+
 ## 1.0.0-alpha.2
 
 ### Patch Changes
