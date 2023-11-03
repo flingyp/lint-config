@@ -69,7 +69,7 @@
 {
   "scripts": {
     "lint": "prettier . --write && eslint . && stylelint \"**/*.{css,scss,vue}\"",
-    "lint:fix": "prettier . --write && eslint . --fix && stylelint . --fix \"**/*.{css,scss,vue}\""
+    "lint:fix": "prettier . --write && eslint . --fix && stylelint --fix \"**/*.{css,scss,sass,vue}\""
   }
 }
 ```
