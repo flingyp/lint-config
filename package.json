@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "prettier . --write && eslint . && stylelint \"**/*.{css,scss,vue}\"",
-    "lint:fix": "prettier . --write && eslint . --fix && stylelint . --fix \"**/*.{css,scss,vue}\""
+    "lint:fix": "prettier . --write && eslint . --fix && stylelint --fix \"**/*.{css,scss,vue}\""
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",

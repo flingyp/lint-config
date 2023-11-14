@@ -28,13 +28,13 @@
 
 ### Config `.eslintrc`、`.stylelintrc`
 
-```
+```json
 {
   "extends": "@flypeng/eslint-config"
 }
 ```
 
-```
+```json
 {
   "extends": "@flypeng/stylelint-config"
 }
@@ -42,7 +42,7 @@
 
 ### Config `.prettierrc` and `.prettierignore`
 
-```
+```json
 {
   "semi": true,
   "singleQuote": true,
@@ -74,7 +74,7 @@
 }
 ```
 
-### Config VSCode
+### Config VSCode Settings
 
 Install VSCode **ESLint**、**Stylelint**、**Prettier**、**Prettier ESLint** plugins and create `.vscode/settings.json`
 
@@ -110,3 +110,41 @@ Install VSCode **ESLint**、**Stylelint**、**Prettier**、**Prettier ESLint** p
   "stylelint.validate": ["css", "less", "scss", "sass", "vue", "postcss"]
 }
 ```
+
+### Config `.editorconfig`
+
+The configuration of.editorconfig is necessary for team development to ensure that the team editor behaves in a consistent style.
+
+```
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+root = true
+
+[*]
+
+# We recommend you to keep these unchanged
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Change these settings to your own preference
+indent_style = space
+indent_size = 4
+
+[*.{ts,tsx,js,jsx,json,css,scss,yml,yaml,html,vue,md}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+```
+
+### VSCode Extensions
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+- [Prettier ESLint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint)
+- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
