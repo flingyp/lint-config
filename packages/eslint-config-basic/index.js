@@ -2,6 +2,7 @@ const basicConfig = [
   {
     languageOptions: {
       ecmaVersion: 'latest',
+      sourceType: 'module',
     },
     ignores: [
       '*.min.*',
@@ -22,9 +23,6 @@ const basicConfig = [
       '!.vitepress',
       '!.vscode',
     ],
-    rules: {
-      semi: ['error', 'always'],
-    },
   },
 ];
 

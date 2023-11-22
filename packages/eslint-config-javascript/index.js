@@ -7,13 +7,22 @@ import { fileURLToPath } from 'url';
  * https://eslint.org/docs/latest/use/configure/migration-guide#using-eslintrc-configs-in-flat-config
  */
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const fileName = fileURLToPath(import.meta.url);
+const dirName = path.dirname(fileName);
 
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
+  baseDirectory: dirName,
 });
 
-const javaScriptConfig = [...compat.extends('eslint-config-airbnb-base')];
+const javaScriptConfig = [
+  ...compat.extends('eslint-config-airbnb-base'),
+  {
+    rules: {
+      'import/no-extraneous-dependencies': 'off',
+      'import/no-unresolved': 'off',
+      'no-unused-expressions': 'off',
+    },
+  },
+];
 
 export default () => javaScriptConfig;

@@ -5,20 +5,22 @@ import configJavaScript from '@flypeng/eslint-config-javascript';
 import configTypeScript from '@flypeng/eslint-config-typescript';
 import configPrettier from 'eslint-config-prettier';
 
-const lintConfigBasic = configBasic();
-const lintConfigJavaScript = configJavaScript();
-const lintConfigTypeScript = configTypeScript();
+const lintBasic = configBasic();
+const lintJavaScript = configJavaScript();
+const lintTypeScript = configTypeScript();
 
-const eslintConfig = [...lintConfigBasic, ...lintConfigJavaScript];
+const eslintConfig = [...lintJavaScript];
 
 if (isPackageExists('typescript')) {
-  eslintConfig.push(...lintConfigTypeScript);
+  eslintConfig.push(...lintTypeScript);
 }
 
 if (isPackageExists('prettier')) {
   eslintConfig.push(configPrettier);
 }
 
-console.log('eslintConfig->>', eslintConfig);
+eslintConfig.push(...lintBasic);
+
+// console.log('eslintConfig->>', eslintConfig);
 
 export default () => eslintConfig;

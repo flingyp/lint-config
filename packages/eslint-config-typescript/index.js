@@ -8,23 +8,21 @@ import { fileURLToPath } from 'url';
  * https://eslint.org/docs/latest/use/configure/migration-guide#using-eslintrc-configs-in-flat-config
  */
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const fileName = fileURLToPath(import.meta.url);
+const dirName = path.dirname(fileName);
 
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
+  baseDirectory: dirName,
 });
 
 const typescriptConfig = [
-  Object.assign(
-    {
-      files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
-      languageOptions: {
-        parser: eslintTsParser,
-      },
+  ...compat.plugins('@typescript-eslint/eslint-plugin'),
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
+    languageOptions: {
+      parser: eslintTsParser,
     },
-    ...compat.plugins('@typescript-eslint/eslint-plugin'),
-  ),
+  },
 ];
 
 export default () => typescriptConfig;
