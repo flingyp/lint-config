@@ -8,7 +8,8 @@
 - Share ESLint and Stylelint configurations
 - Code lint check based on Airbnb
 - Code formatting based on Prettier
-- Easy to integrate, configure, and customize rules
+- [ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new), compose easily
+- Easy to integrate, configuration, and custom rules
 
 ## 🏍️ Packages
 
@@ -26,13 +27,25 @@
 
 `pnpm add eslint stylelint prettier @flypeng/eslint-config @flypeng/stylelint-config -D`
 
-### Config `.eslintrc`、`.stylelintrc`
+### Config `.eslintrc` or `eslint.config.js`、`.stylelintrc`
+
+#### `.eslintrc` (ESLint < 9 && Disable eslint new configuration)
 
 ```json
 {
   "extends": "@flypeng/eslint-config"
 }
 ```
+
+#### `eslint.config.js` (ESLint > 9 && Enable eslint new configuration)
+
+```js
+import init from '@flypeng/eslint-config';
+
+export default init();
+```
+
+#### `.stylelintrc`
 
 ```json
 {
@@ -88,6 +101,8 @@ Install VSCode **ESLint**、**Stylelint**、**Prettier**、**Prettier ESLint** p
     "source.fixAll.stylelint": true
   },
   "eslint.enable": true,
+  "eslint.experimental.useFlatConfig": true, // 启用ESLint新的配置系统
+  "eslint.format.enable": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
