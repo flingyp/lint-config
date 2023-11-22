@@ -12,6 +12,7 @@
 ## 🏍️ Packages
 
 - `@flypeng/eslint-config`
+  - `@flypeng/eslint-config-basic`
   - `@flypeng/eslint-config-javascript`
   - `@flypeng/eslint-config-typescript`
   - `@flypeng/eslint-config-vue`
