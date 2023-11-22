@@ -74,9 +74,15 @@ importers:
       eslint:
         specifier: '>=8.0.0'
         version: 8.51.0
+      local-pkg:
+        specifier: ^0.5.0
+        version: 0.5.0
 
   packages/eslint-config-javascript:
     dependencies:
+      '@eslint/eslintrc':
+        specifier: ^2.1.3
+        version: 2.1.3
       eslint:
         specifier: '>=8.0.0'
         version: 8.51.0
@@ -110,6 +116,9 @@ importers:
 
   packages/eslint-config-typescript:
     dependencies:
+      '@eslint/eslintrc':
+        specifier: ^2.1.3
+        version: 2.1.3
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.8.0
         version: 6.8.0(@typescript-eslint/parser@6.8.0)(eslint@8.51.0)(typescript@5.2.2)
@@ -119,6 +128,9 @@ importers:
       eslint:
         specifier: '>=8.0.0'
         version: 8.51.0
+      typescript:
+        specifier: '>=4.0.0'
+        version: 5.2.2
 
   packages/eslint-config-vue:
     dependencies:
@@ -598,8 +610,8 @@ packages:
     resolution: {integrity: sha512-Y27x+MBLjXa+0JWDhykM3+JE+il3kHKAEqabfEWq3SDhZjLYb6/BHL/JKFnH3fe207JaXkyDo685Oc2Glt6ifA==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
 
-  /@eslint/eslintrc@2.1.2:
-    resolution: {integrity: sha512-+wvgpDsrB1YqAMdEUCcnTlpfVBH7Vqn6A/NT3D8WVXFIaKMlErPIZT3oCIAVCOtarRpMtelZLqJeU3t7WY6X6g==}
+  /@eslint/eslintrc@2.1.3:
+    resolution: {integrity: sha512-yZzuIG+jnVu6hNSzFEN07e8BxF3uAzYtQb6uDkaYZLo6oYZDCq454c5kB8zxnzfCYyP4MIuyBn10L0DqwujTmA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       ajv: 6.12.6
@@ -2128,7 +2140,7 @@ packages:
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.51.0)
       '@eslint-community/regexpp': 4.9.1
-      '@eslint/eslintrc': 2.1.2
+      '@eslint/eslintrc': 2.1.3
       '@eslint/js': 8.51.0
       '@humanwhocodes/config-array': 0.11.11
       '@humanwhocodes/module-importer': 1.0.1

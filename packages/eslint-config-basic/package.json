@@ -1,5 +1,6 @@
 {
   "name": "@flypeng/eslint-config-basic",
+  "type": "module",
   "version": "1.0.0",
   "description": "flingyp's basic config of Common",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
@@ -16,5 +17,8 @@
   ],
   "peerDependencies": {
     "eslint": ">=8.0.0"
+  },
+  "dependencies": {
+    "local-pkg": "^0.5.0"
   }
 }

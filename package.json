@@ -1,5 +1,6 @@
 {
   "name": "@flypeng/lint-config-monorepo",
+  "type": "module",
   "private": true,
   "packageManager": "pnpm@8.5.1",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",

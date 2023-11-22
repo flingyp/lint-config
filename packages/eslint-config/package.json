@@ -1,7 +1,7 @@
 {
   "name": "@flypeng/eslint-config",
+  "type": "module",
   "version": "1.0.0",
-  "type": "commonjs",
   "description": "flingyp's lint config of ESLint",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
@@ -26,7 +26,7 @@
     "@flypeng/eslint-config-react": "workspace:^",
     "@flypeng/eslint-config-typescript": "workspace:^",
     "@flypeng/eslint-config-vue": "workspace:^",
-    "eslint-config-prettier": "^9.0.0",
-    "local-pkg": "^0.5.0"
+    "local-pkg": "^0.5.0",
+    "eslint-config-prettier": "^9.0.0"
   }
 }

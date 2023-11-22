@@ -1,5 +1,6 @@
 {
   "name": "@flypeng/eslint-config-typescript",
+  "type": "module",
   "version": "1.0.0",
   "description": "flingyp's lint config of TypeScript",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
@@ -16,9 +17,11 @@
     "index.js"
   ],
   "peerDependencies": {
-    "eslint": ">=8.0.0"
+    "eslint": ">=8.0.0",
+    "typescript": ">=4.0.0"
   },
   "dependencies": {
+    "@eslint/eslintrc": "^2.1.3",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0"
   }

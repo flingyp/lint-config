@@ -1,21 +1,24 @@
-const { isPackageExists } = require('local-pkg');
+import { isPackageExists } from 'local-pkg';
 
-// 注意：@flypeng/eslint-config-basic 公共规则配置应该放在最后（防止覆盖）
-const extendsList = [
-  '@flypeng/eslint-config-javascript',
-  '@flypeng/eslint-config-other',
-];
+import configBasic from '@flypeng/eslint-config-basic';
+import configJavaScript from '@flypeng/eslint-config-javascript';
+import configTypeScript from '@flypeng/eslint-config-typescript';
+import configPrettier from 'eslint-config-prettier';
 
-isPackageExists('typescript') &&
-  extendsList.push('@flypeng/eslint-config-typescript');
-isPackageExists('vue') && extendsList.push('@flypeng/eslint-config-vue');
-isPackageExists('react') && extendsList.push('@flypeng/eslint-config-react');
+const lintConfigBasic = configBasic();
+const lintConfigJavaScript = configJavaScript();
+const lintConfigTypeScript = configTypeScript();
 
-extendsList.push('@flypeng/eslint-config-basic');
-extendsList.push('prettier');
+const eslintConfig = [...lintConfigBasic, ...lintConfigJavaScript];
 
-const eslintConfig = {
-  extends: extendsList,
-};
+if (isPackageExists('typescript')) {
+  eslintConfig.push(...lintConfigTypeScript);
+}
 
-module.exports = eslintConfig;
+if (isPackageExists('prettier')) {
+  eslintConfig.push(configPrettier);
+}
+
+console.log('eslintConfig->>', eslintConfig);
+
+export default () => eslintConfig;
