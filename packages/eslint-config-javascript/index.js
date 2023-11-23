@@ -23,6 +23,11 @@ const javaScriptConfig = [
       'no-unused-expressions': 'off',
     },
   },
+  {
+    rules: {
+      'no-unused-vars': 'warn',
+    },
+  },
 ];
 
 export default () => javaScriptConfig;

@@ -16,13 +16,13 @@ const compat = new FlatCompat({
 });
 
 const typescriptConfig = [
-  ...compat.plugins('@typescript-eslint/eslint-plugin'),
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
     languageOptions: {
       parser: eslintTsParser,
     },
   },
+  ...compat.plugins('@typescript-eslint/eslint-plugin'),
 ];
 
 export default () => typescriptConfig;
