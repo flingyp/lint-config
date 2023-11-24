@@ -9,7 +9,6 @@ import { fileURLToPath } from 'url';
 
 const fileName = fileURLToPath(import.meta.url);
 const dirName = path.dirname(fileName);
-
 const compat = new FlatCompat({
   baseDirectory: dirName,
 });
@@ -21,11 +20,6 @@ const javaScriptConfig = [
       'import/no-extraneous-dependencies': 'off',
       'import/no-unresolved': 'off',
       'no-unused-expressions': 'off',
-    },
-  },
-  {
-    rules: {
-      'no-unused-vars': 'warn',
     },
   },
 ];

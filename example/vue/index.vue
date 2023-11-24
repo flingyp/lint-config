@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+const todoItems = ref([{ id: 1, done: false, text: '' }]);
 const message = ref('Hello World');
 const sumVueValue = ref(0);
 const add = (value: number) => {
@@ -9,7 +10,20 @@ const add = (value: number) => {
 </script>
 
 <template>
-  <div @click="add(2)">{{ message }} - {{ sumVueValue }}</div>
+  <div class="add-button" @click="add(2)">
+    {{ message }} - {{ sumVueValue }}
+  </div>
+  <ul class="todo-list">
+    <li
+      v-for="(todo, index) in todoItems"
+      :key="todo.id"
+      class="todo-item"
+      :class="{ 'todo-item--done': todo.done }"
+      @click="todo.done = !todo.done"
+    >
+      <span v-if="todo.done">✓</span> {{ todo.text }}
+    </li>
+  </ul>
 </template>
 
 <style scoped lang="scss">

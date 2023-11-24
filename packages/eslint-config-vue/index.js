@@ -4,21 +4,7 @@ import { fileURLToPath } from 'url';
 import vueParser from 'vue-eslint-parser';
 import eslintTsParser from '@typescript-eslint/parser';
 
-// module.exports = {
-//   overrides: [
-//     {
-//       files: ['*.vue'],
-//       parser: 'vue-eslint-parser',
-//       parserOptions: {
-//         parser: '@typescript-eslint/parser',
-//       },
-//       extends: ['plugin:vue/vue3-recommended'],
-//       rules: {
-//         'vue/multi-word-component-names': 'off',
-//       },
-//     },
-//   ],
-// };
+// eslint-plugin-vue to support Flat Config: https://github.com/vuejs/eslint-plugin-vue/issues/1291
 
 const fileName = fileURLToPath(import.meta.url);
 const dirName = path.dirname(fileName);
@@ -28,16 +14,20 @@ const compat = new FlatCompat({
 });
 
 const vueConfig = [
+  ...compat.plugins('eslint-plugin-vue'),
+  ...compat.extends('plugin:vue/vue3-recommended'),
   {
-    files: ['**/*.vue'],
     languageOptions: {
       parser: vueParser,
       parserOptions: {
         parser: eslintTsParser,
       },
     },
+    rules: {
+      'vue/multi-word-component-names': 'off',
+      'vue/no-unused-vars': 'off',
+    },
   },
-  ...compat.plugins('eslint-plugin-vue'),
 ];
 
 export default () => vueConfig;

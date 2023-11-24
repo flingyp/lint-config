@@ -10,19 +10,21 @@ import { fileURLToPath } from 'url';
 
 const fileName = fileURLToPath(import.meta.url);
 const dirName = path.dirname(fileName);
-
 const compat = new FlatCompat({
   baseDirectory: dirName,
 });
 
 const typescriptConfig = [
+  ...compat.plugins('@typescript-eslint'),
+  ...compat.extends('plugin:@typescript-eslint/recommended'),
   {
-    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
     languageOptions: {
       parser: eslintTsParser,
     },
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'off',
+    },
   },
-  ...compat.plugins('@typescript-eslint/eslint-plugin'),
 ];
 
 export default () => typescriptConfig;

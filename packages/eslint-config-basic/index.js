@@ -1,6 +1,15 @@
+import js from '@eslint/js';
+import globals from 'globals';
+
 const basicConfig = [
   {
+    ...js.configs.recommended,
     languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.es2021,
+      },
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
@@ -23,6 +32,9 @@ const basicConfig = [
       '!.vitepress',
       '!.vscode',
     ],
+    rules: {
+      'no-unused-vars': 'warn',
+    },
   },
 ];
 
