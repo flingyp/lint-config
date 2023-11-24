@@ -16,7 +16,7 @@
     "index.js"
   ],
   "peerDependencies": {
-    "eslint": ">=8.0.0",
+    "eslint": ">=8.23.0",
     "prettier": ">=3.0.0"
   },
   "dependencies": {

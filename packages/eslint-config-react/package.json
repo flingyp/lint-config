@@ -1,5 +1,6 @@
 {
   "name": "@flypeng/eslint-config-react",
+  "type": "module",
   "version": "1.0.0",
   "description": "flingyp's lint config of React",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
@@ -16,9 +17,11 @@
     "index.js"
   ],
   "peerDependencies": {
-    "eslint": ">=8.0.0"
+    "eslint": ">=8.23.0"
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.33.2"
+    "@eslint/eslintrc": "^2.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "globals": "^13.23.0"
   }
 }

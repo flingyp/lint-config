@@ -15,7 +15,7 @@
     "index.js"
   ],
   "peerDependencies": {
-    "eslint": ">=8.0.0"
+    "eslint": ">=8.23.0"
   },
   "dependencies": {
     "eslint-plugin-jsonc": "^2.10.0",
