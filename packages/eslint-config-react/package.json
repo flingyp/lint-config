@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "@eslint/eslintrc": "^2.1.3",
-    "eslint-plugin-react": "^7.33.2",
-    "globals": "^13.23.0"
+    "eslint-plugin-react": "^7.33.2"
   }
 }

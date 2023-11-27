@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 /**
- * TIP: eslint-config-airbnb-base 目前还不支持ESLint的新配置系统，需要使用 @eslint/eslintrc 将旧配置系统配置转换为新配置系统
+ * TIP: 需要使用 @eslint/eslintrc 将旧配置系统配置转换为新配置系统
  * https://eslint.org/docs/latest/use/configure/migration-guide#using-eslintrc-configs-in-flat-config
  */
 

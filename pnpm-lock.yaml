@@ -7,6 +7,9 @@ importers:
       react:
         specifier: ^18.2.0
         version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
       vue:
         specifier: ^3.3.4
         version: 3.3.4
@@ -20,6 +23,12 @@ importers:
       '@flypeng/stylelint-config':
         specifier: workspace:^
         version: link:packages/stylelint-config
+      '@types/react':
+        specifier: ^18.2.38
+        version: 18.2.38
+      '@types/react-dom':
+        specifier: ^18.2.17
+        version: 18.2.17
       eslint:
         specifier: ^8.51.0
         version: 8.51.0
@@ -57,7 +66,7 @@ importers:
         specifier: workspace:^
         version: link:../eslint-config-vue
       eslint:
-        specifier: '>=8.0.0'
+        specifier: '>=8.23.0'
         version: 8.51.0
       eslint-config-prettier:
         specifier: ^9.0.0
@@ -75,7 +84,7 @@ importers:
         specifier: ^8.54.0
         version: 8.54.0
       eslint:
-        specifier: '>=8.0.0'
+        specifier: '>=8.23.0'
         version: 8.51.0
       globals:
         specifier: ^13.23.0
@@ -90,7 +99,7 @@ importers:
         specifier: ^2.1.3
         version: 2.1.3
       eslint:
-        specifier: '>=8.0.0'
+        specifier: '>=8.23.0'
         version: 8.51.0
       eslint-config-airbnb-base:
         specifier: ^15.0.0
@@ -99,7 +108,7 @@ importers:
   packages/eslint-config-other:
     dependencies:
       eslint:
-        specifier: '>=8.0.0'
+        specifier: '>=8.23.0'
         version: 8.51.0
       eslint-plugin-jsonc:
         specifier: ^2.10.0
@@ -117,7 +126,7 @@ importers:
         specifier: ^2.1.3
         version: 2.1.3
       eslint:
-        specifier: '>=8.0.0'
+        specifier: '>=8.23.0'
         version: 8.51.0
       eslint-plugin-react:
         specifier: ^7.33.2
@@ -138,7 +147,7 @@ importers:
         specifier: ^6.8.0
         version: 6.8.0(eslint@8.51.0)(typescript@5.2.2)
       eslint:
-        specifier: '>=8.0.0'
+        specifier: '>=8.23.0'
         version: 8.51.0
       typescript:
         specifier: '>=4.0.0'
@@ -153,7 +162,7 @@ importers:
         specifier: ^6.8.0
         version: 6.8.0(eslint@8.51.0)(typescript@5.2.2)
       eslint:
-        specifier: '>=8.0.0'
+        specifier: '>=8.23.0'
         version: 8.51.0
       eslint-plugin-vue:
         specifier: ^9.17.0
@@ -790,6 +799,28 @@ packages:
 
   /@types/normalize-package-data@2.4.2:
     resolution: {integrity: sha512-lqa4UEhhv/2sjjIQgjX8B+RBjj47eo0mzGasklVJ78UKGQY1r0VpB9XHDaZZO9qzEFDdy4MrXLuEaSmPrPSe/A==}
+
+  /@types/prop-types@15.7.11:
+    resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
+    dev: true
+
+  /@types/react-dom@18.2.17:
+    resolution: {integrity: sha512-rvrT/M7Df5eykWFxn6MYt5Pem/Dbyc1N8Y0S9Mrkw2WFCRiqUgw9P7ul2NpwsXCSM1DVdENzdG9J5SreqfAIWg==}
+    dependencies:
+      '@types/react': 18.2.38
+    dev: true
+
+  /@types/react@18.2.38:
+    resolution: {integrity: sha512-cBBXHzuPtQK6wNthuVMV6IjHAFkdl/FOPFIlkd81/Cd1+IqkHu/A+w4g43kaQQoYHik/ruaQBDL72HyCy1vuMw==}
+    dependencies:
+      '@types/prop-types': 15.7.11
+      '@types/scheduler': 0.16.8
+      csstype: 3.1.2
+    dev: true
+
+  /@types/scheduler@0.16.8:
+    resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==}
+    dev: true
 
   /@types/semver@7.5.3:
     resolution: {integrity: sha512-OxepLK9EuNEIPxWNME+C6WwbRAOOI2o2BaQEGzz5Lu2e4Z5eDnEo+/aVEDMIXywoJitJ7xWd641wrGLZdtwRyw==}
@@ -1619,7 +1650,6 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
-    dev: false
 
   /csv-generate@3.4.3:
     resolution: {integrity: sha512-w/T+rqR0vwvHqWs/1ZyMDWtHHSJaN06klRqJXBEpDJaM/+dZkso0OKh1VcuuYvK3XM53KysVNq8Ko/epCK8wOw==}
@@ -4300,6 +4330,16 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
 
+  /react-dom@18.2.0(react@18.2.0):
+    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: false
+
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
@@ -4604,6 +4644,12 @@ packages:
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
+
+  /scheduler@0.23.0:
+    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
 
   /scss@0.2.4:
     resolution: {integrity: sha512-4u8V87F+Q/upVhUmhPnB4C1R11xojkRkWjExL2v0CX2EXTg18VrKd+9JWoeyCp2VEMdSpJsyAvVU+rVjogh51A==}

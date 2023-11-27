@@ -36,8 +36,17 @@ if (isPackageExists('vue')) {
   eslintConfig.push(...scopeFile(lintVue, ['**/*.vue']));
 }
 
-if (isPackageExists('react')) {
-  eslintConfig.push(...scopeFile(lintReact, ['**/*.{js,jsx,mjs,cjs,ts,tsx}']));
+if (isPackageExists('react') && isPackageExists('react-dom')) {
+  eslintConfig.push(
+    ...scopeFile(lintReact, [
+      '**/*.js',
+      '**/*.jsx',
+      '**/*.mjs',
+      '**/*.cjs',
+      '**/*.ts',
+      '**/*.tsx',
+    ]),
+  );
 }
 
 if (isPackageExists('prettier')) {
