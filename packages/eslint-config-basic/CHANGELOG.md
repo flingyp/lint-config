@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-basic
 
+## 2.0.0-beta.0
+
+### Major Changes
+
+- flat configuration with ESLint integration
+
 ## 1.0.0
 
 ### Major Changes

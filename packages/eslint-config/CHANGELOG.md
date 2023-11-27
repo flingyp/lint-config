@@ -1,5 +1,21 @@
 # @flypeng/eslint-config
 
+## 2.0.0-beta.0
+
+### Major Changes
+
+- flat configuration with ESLint integration
+
+### Patch Changes
+
+- Updated dependencies
+  - @flypeng/eslint-config-javascript@2.0.0-beta.0
+  - @flypeng/eslint-config-typescript@2.0.0-beta.0
+  - @flypeng/eslint-config-basic@2.0.0-beta.0
+  - @flypeng/eslint-config-other@2.0.0-beta.0
+  - @flypeng/eslint-config-react@2.0.0-beta.0
+  - @flypeng/eslint-config-vue@2.0.0-beta.0
+
 ## 1.0.0
 
 ### Major Changes

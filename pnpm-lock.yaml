@@ -131,9 +131,6 @@ importers:
       eslint-plugin-react:
         specifier: ^7.33.2
         version: 7.33.2(eslint@8.51.0)
-      globals:
-        specifier: ^13.23.0
-        version: 13.23.0
 
   packages/eslint-config-typescript:
     dependencies:
