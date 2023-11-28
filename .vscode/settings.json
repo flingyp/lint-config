@@ -6,6 +6,7 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
+  "editor.inlineSuggest.showToolbar": "onHover",
   "eslint.enable": true,
   "eslint.experimental.useFlatConfig": true,
   "eslint.format.enable": true,
@@ -29,6 +30,6 @@
   "scss.validate": false,
   "stylelint.enable": true,
   "stylelint.validate": ["css", "less", "scss", "sass", "vue", "postcss"],
-  "cSpell.words": ["flingyp", "flypeng", "stylelint"],
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "cSpell.words": ["flingyp", "flypeng", "stylelint"]
 }

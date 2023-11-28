@@ -38,10 +38,24 @@
 
 #### `eslint.config.js` (ESLint > 9 && Enable eslint new configuration)
 
-```js
-import init from '@flypeng/eslint-config';
+With ESM
 
-export default init();
+- `"type": "module"` in `package.json`
+
+```js
+// eslint.config.js
+import flypeng from '@flypeng/eslint-config';
+
+export default flypeng();
+```
+
+With CJS
+
+```js
+// eslint.config.js
+const flypeng = require('@flypeng/eslint-config').default;
+
+module.exports = flypeng();
 ```
 
 #### `.stylelintrc`
