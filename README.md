@@ -176,3 +176,30 @@ trim_trailing_whitespace = false
 - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 - [Prettier ESLint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint)
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+
+## 🏍️ Overwrite rules
+
+If you need to rewrite the rules, you need to specify the file Scope, because the rules used by `@flypeng/eslint-config` are plugins referenced by various file types, so unexpected errors will occur if the file scope is not declared.
+
+Examples:
+
+```js
+// eslint.config.js
+import flypeng from '@flypeng/eslint-config';
+
+export default [
+  ...flypeng(),
+  {
+    ignores: ['xxx'],
+  },
+  {
+    /**
+     * If you do not declare the file Scope, other files will also refer to this rule, but the rules of other files do not use the @ typescript-eslint/eslint-plugin plugin, so an error will be reported during Lint.
+     */
+    files: ['**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
+];
+```
