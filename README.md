@@ -179,7 +179,7 @@ trim_trailing_whitespace = false
 
 ## 🏍️ Overwrite rules
 
-If you need to rewrite the rules, you need to specify the file Scope, because the rules used by `@flypeng/eslint-config` are plugins referenced by various file types, so unexpected errors will occur if the file scope is not declared.
+If you need to rewrite rules, you probably need to specify files scope, because the rules used by packages other than `@flypeng/eslint-config-javascript` are plugins for specific files. If you do not declare the file scope, unexpected errors will occur.
 
 Examples:
 
@@ -189,9 +189,6 @@ import flypeng from '@flypeng/eslint-config';
 
 export default [
   ...flypeng(),
-  {
-    ignores: ['xxx'],
-  },
   {
     /**
      * If you do not declare the file Scope, other files will also refer to this rule, but the rules of other files do not use the @ typescript-eslint/eslint-plugin plugin, so an error will be reported during Lint.
