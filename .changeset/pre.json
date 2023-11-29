@@ -11,7 +11,5 @@
     "@flypeng/eslint-config-vue": "1.0.0",
     "@flypeng/stylelint-config": "1.0.1"
   },
-  "changesets": [
-    "witty-penguins-clean"
-  ]
+  "changesets": ["witty-penguins-clean"]
 }
