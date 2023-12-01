@@ -38,9 +38,13 @@ const basicConfig = [
     ],
   },
   {
-    // Overwrite common rules
     rules: {
       'no-unused-vars': 'warn',
+    },
+  },
+  {
+    rules: {
+      'no-undef': 'off',
     },
   },
 ];
