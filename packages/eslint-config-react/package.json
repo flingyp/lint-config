@@ -1,7 +1,7 @@
 {
   "name": "@flypeng/eslint-config-react",
   "type": "module",
-  "version": "2.0.0-beta.0",
+  "version": "2.0.0-beta.1",
   "description": "flingyp's lint config of React",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",

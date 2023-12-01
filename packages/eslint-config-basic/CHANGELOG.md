@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-basic
 
+## 2.0.0-beta.1
+
+### Patch Changes
+
+- overwrie typescript rules and fix global ignores config invalid
+
 ## 2.0.0-beta.0
 
 ### Major Changes
