@@ -13,11 +13,15 @@ const basicConfig = [
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
+  },
+  {
+    // Config globally ignoring files with ignores
     ignores: [
       '*.min.*',
       '*.d.ts',
       'CHANGELOG.md',
       'dist',
+      'dev-dist',
       'LICENSE*',
       'output',
       'out',
@@ -32,6 +36,9 @@ const basicConfig = [
       '!.vitepress',
       '!.vscode',
     ],
+  },
+  {
+    // Overwrite common rules
     rules: {
       'no-unused-vars': 'warn',
     },
