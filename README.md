@@ -191,7 +191,9 @@ export default [
   ...flypeng(),
   {
     /**
-     * If you do not declare the file Scope, other files will also refer to this rule, but the rules of other files do not use the @ typescript-eslint/eslint-plugin plugin, so an error will be reported during Lint.
+     * If you do not declare the file Scope, other files will also refer to this rule.
+     * But the rules of other files do not use the @ typescript-eslint/eslint-plugin plugin, so an error will be reported during Lint.
+     * Reference detail: https://github.com/eslint/eslint/issues/17485
      */
     files: ['**/*.ts'],
     rules: {
