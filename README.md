@@ -9,7 +9,7 @@
 - [ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new), compose easily
 - Easy to integrate, configuration, and custom rules
 
-## 🏍️ Packages
+## 📦 Packages
 
 - `@flypeng/eslint-config`
   - `@flypeng/eslint-config-basic`
@@ -202,3 +202,19 @@ export default [
   },
 ];
 ```
+
+## ✍️ About using Prettier
+
+There is a lot of discussion on the web about using Prettier for code formatting, and it is true that some aspects of Prettier's formatting are a bit mandatory, resulting in code that is less readable or not in your preferred style of code.
+
+One of [Why I don't use Prettier](https://antfu.me/posts/why-not-prettier-zh) written by [Anthony Fu](https://github.com/antfu) accepts why Prettier is not applicable. See what he has to say.
+
+Why did I enable Prettier for code formatting in `@flypeng/eslint-config`?
+
+There are two main things I took into account:
+
+First, if you are an individual developer and you have a good grasp of the overall project code style, you can consider not using Prettier, but if you are a team developer, you can't guarantee that your code style will be accepted by the other team members and it will lead to a variety of code styles for the project as a whole. So this time you should consider using Prettier to force the unified code style.
+
+Second: ESLint main responsibility is to verify the code rather than the code format , so for simple checksum automatic repair can be a certain degree of enlightenment to the role of formatting . But for the overall project code style ESLint does not guarantee that Prettier's main responsibility is to unify the overall style.
+
+Based on the above two points, I decided to open the use of Prettier.
