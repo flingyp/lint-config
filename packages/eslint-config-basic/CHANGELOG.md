@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-basic
 
+## 2.0.0-beta.2
+
+### Patch Changes
+
+- feat: no-undef rule close
+
 ## 2.0.0-beta.1
 
 ### Patch Changes
