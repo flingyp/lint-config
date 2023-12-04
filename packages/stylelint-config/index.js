@@ -20,4 +20,9 @@ module.exports = {
   fix: true,
   plugins: ['stylelint-order', 'stylelint-config-rational-order/plugin'],
   extends: extendsList,
+  rules: {
+    'custom-property-pattern': null,
+    'selector-class-pattern': null,
+    'value-keyword-case': null,
+  },
 };
