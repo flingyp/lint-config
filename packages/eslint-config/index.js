@@ -5,13 +5,8 @@ import javaScriptConfig from '@flypeng/eslint-config-javascript';
 import typeScriptConfig from '@flypeng/eslint-config-typescript';
 import vueConfig from '@flypeng/eslint-config-vue';
 import reactConfig from '@flypeng/eslint-config-react';
+import otherConfig from '@flypeng/eslint-config-other';
 import prettierConfig from 'eslint-config-prettier';
-
-const lintBasic = basicConfig();
-const lintJavaScript = javaScriptConfig();
-const lintTypeScript = typeScriptConfig();
-const lintVue = vueConfig();
-const lintReact = reactConfig();
 
 const scopeFile = (config, files) =>
   config.map((item) => ({
@@ -19,7 +14,18 @@ const scopeFile = (config, files) =>
     files,
   }));
 
-const eslintConfig = [...scopeFile(lintJavaScript, ['**/*.js', '**/*.jsx'])];
+const lintBasic = basicConfig();
+const lintJavaScript = javaScriptConfig();
+const lintTypeScript = typeScriptConfig();
+const lintVue = vueConfig();
+const lintReact = reactConfig();
+const { jsonConfig: lintJson, markdownConfig: lintMd } = otherConfig();
+
+const eslintConfig = [
+  ...scopeFile(lintJavaScript, ['**/*.js', '**/*.jsx']),
+  ...scopeFile(lintJson, ['**/*.json', '**/*.json5', '**/*.jsonc']),
+  ...scopeFile(lintMd, ['**/*.md']),
+];
 
 if (isPackageExists('typescript')) {
   eslintConfig.push(

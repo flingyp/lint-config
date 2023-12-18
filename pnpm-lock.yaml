@@ -107,6 +107,9 @@ importers:
 
   packages/eslint-config-other:
     dependencies:
+      '@eslint/eslintrc':
+        specifier: ^2.1.3
+        version: 2.1.3
       eslint:
         specifier: '>=8.23.0'
         version: 8.51.0

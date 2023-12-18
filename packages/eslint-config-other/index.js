@@ -1,40 +1,31 @@
-module.exports = {
-  extends: [
-    'plugin:jsonc/recommended-with-jsonc',
-    'plugin:markdown/recommended',
-  ],
-  overrides: [
-    {
-      files: ['*.json', '*.json5', '*.jsonc'],
-      parser: 'jsonc-eslint-parser',
-      rules: {
-        'jsonc/array-bracket-spacing': ['error', 'never'],
-        'jsonc/comma-dangle': ['error', 'never'],
-        'jsonc/comma-style': ['error', 'last'],
-        'jsonc/indent': ['error', 2],
-        'jsonc/key-spacing': [
-          'error',
-          { beforeColon: false, afterColon: true },
-        ],
-        'jsonc/no-octal-escape': 'error',
-        'jsonc/object-curly-newline': [
-          'error',
-          { multiline: true, consistent: true },
-        ],
-        'jsonc/object-curly-spacing': ['error', 'always'],
-        'jsonc/object-property-newline': [
-          'error',
-          { allowMultiplePropertiesPerLine: true },
-        ],
-      },
+import { FlatCompat } from '@eslint/eslintrc';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import eslintJsoncParser from 'jsonc-eslint-parser';
+
+const fileName = fileURLToPath(import.meta.url);
+const dirName = path.dirname(fileName);
+const compat = new FlatCompat({
+  baseDirectory: dirName,
+});
+
+const jsonConfig = [
+  ...compat.extends('plugin:jsonc/recommended-with-jsonc'),
+  {
+    languageOptions: {
+      parser: eslintJsoncParser,
     },
-    {
-      files: ['**/*.md'],
-      processor: 'markdown/markdown',
-    },
-    {
-      files: ['**/*.md/*.*'],
-      rules: {},
-    },
-  ],
-};
+  },
+];
+
+const markdownConfig = [
+  ...compat.extends('plugin:markdown/recommended'),
+  {
+    processor: 'markdown/markdown',
+  },
+];
+
+export default () => ({
+  jsonConfig,
+  markdownConfig,
+});
