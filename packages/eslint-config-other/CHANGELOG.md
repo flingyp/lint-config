@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-other
 
+## 2.0.0-beta.1
+
+### Patch Changes
+
+- feat: @eslint-config-other migrate to new eslint configuration system
+
 ## 2.0.0-beta.0
 
 ### Major Changes

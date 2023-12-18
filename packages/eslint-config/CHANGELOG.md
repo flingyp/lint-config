@@ -1,5 +1,12 @@
 # @flypeng/eslint-config
 
+## 2.0.0-beta.3
+
+### Patch Changes
+
+- Updated dependencies
+  - @flypeng/eslint-config-other@2.0.0-beta.1
+
 ## 2.0.0-beta.2
 
 ### Patch Changes
