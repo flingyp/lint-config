@@ -1,11 +1,6 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
-  },
   "editor.inlineSuggest.showToolbar": "onHover",
   "eslint.enable": true,
   "eslint.experimental.useFlatConfig": true,
