@@ -8,19 +8,19 @@
 - 共享 ESLint 和 Stylelint 配置
 - 基于 Airbnb 的代码校验
 - 基于 Prettier 的代码格式化
-- ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new)，轻松编写
+- [ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new)，轻松编写
 - 易于集成、配置和自定义规则
 
 ## 📦 软件包
 
-- @flypeng/eslint-config
-  - @flypeng/eslint-config-basic
-  - @flypeng/eslint-config-javascript
-  - @flypeng/eslint-config-typescript
-  - @flypeng/eslint-config-vue
-  - @flypeng/eslint-config-react
-  - 其他配置
-- @flypeng/stylelint-config
+- `@flypeng/eslint-config`
+  - `@flypeng/eslint-config-basic`
+  - `@flypeng/eslint-config-javascript`
+  - `@flypeng/eslint-config-typescript`
+  - `@flypeng/eslint-config-vue`
+  - `@flypeng/eslint-config-react`
+  - `@flypeng/eslint-config-other`
+- `@flypeng/stylelint-config`
 
 ## 🏃 集成
 
@@ -34,7 +34,7 @@ pnpm add eslint stylelint prettier @flypeng/eslint-config @flypeng/stylelint-con
 
 ```json
 {
-  "extends"： "@flypeng/eslint-config"
+  "extends": "@flypeng/eslint-config"
 }
 ```
 
@@ -42,49 +42,47 @@ pnpm add eslint stylelint prettier @flypeng/eslint-config @flypeng/stylelint-con
 
 使用 ESM
 
-- `"type"： package.json` 中的 "module"`
+- `"type": "module"` in `package.json`
 
-``js
+```js
 // eslint.config.js
-import flypeng from '@flypeng/eslint-config'；
+import flypeng from '@flypeng/eslint-config';
 
-export default flypeng()；
-
+export default flypeng();
 ```
 
 使用 CJS
 
-使用 CJS
+```js
 // eslint.config.js
-const flypeng = require('@flypeng/eslint-config').default；
+const flypeng = require('@flypeng/eslint-config').default;
 
-module.exports = flypeng()；
+module.exports = flypeng();
 ```
 
 #### `.stylelintrc`
 
-``json
+```json
 {
-"extends"： "@flypeng/stylelint-config"
+  "extends": "@flypeng/stylelint-config"
 }
-
-````
+```
 
 ### 配置 `.prettierrc` 和 `.prettierignore
 
 ```json
 {
-  "semi": true、
-  "singleQuote": true、
-  "bracketSpacing": true、
-  "printWidth": true 120,
+  "semi": true,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "printWidth": 120,
   "vueIndentScriptAndStyle": false
 }
-````
+```
 
 ```
 /dist/*
-.本地
+.local
 .output.js
 /node_modules/**
 **/*.svg
@@ -95,47 +93,46 @@ module.exports = flypeng()；
 
 ### 配置脚本
 
-``json
+```json
 {
-"scripts"： {
-"lint"： "prettier . --write && eslint . && stylelint （"**/\*.{css,scss,vue}/"）"、
-"lint:fix"： "prettier . --write && eslint . --fix && stylelint --fix\"**/\*.{css,scss,sass,vue}\""
+  "scripts": {
+    "lint": "prettier . --write && eslint . && stylelint \"**/*.{css,scss,vue}\"",
+    "lint:fix": "prettier . --write && eslint . --fix && stylelint --fix \"**/*.{css,scss,sass,vue}\""
+  }
 }
-}
-
 ```
 
 ### 配置 VSCode 设置
 
 安装 VSCode **ESLint**、**Stylelint**、**Prettier**、**Prettier ESLint** 插件并创建`.vscode/settings.json`。
 
-``简体
+```json
 {
-  "editor.formatOnSave": true、
-  "editor.defaultFormatter"： "esbenp.prettier-vscode"、
-  "eslint.enable": true、
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.enable": true,
   "eslint.experimental.useFlatConfig": true, // 启用ESLint新的配置系统
-  "eslint.format.enable": true、
-  "eslint.validate"： [
-    "javascript"、
-    "javascriptreact"、
-    "typescript"、
-    "typecriptreact"、
-    "jsx"、
-    "tsx"、"tsx
-    "vue"、"html
-    "html"、"markdown
-    "markdown"、
-    "json"、"jsonc
-    "jsonc"、"json5
-    "json5"、
-    "yaml
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "jsx",
+    "tsx",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5",
+    "yaml"
   ],
-  "css.validate": false、
-  "less.validate": false、
-  "scss.validate": false、
-  "stylelint.enable": true、
-  "stylelint.validate"： ["css", "less", "scss", "sass", "vue", "postcss"].
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "scss", "sass", "vue", "postcss"]
 }
 ```
 
@@ -144,26 +141,26 @@ module.exports = flypeng()；
 在团队开发中，.editorconfig 的配置是必要的，以确保团队编辑器的行为风格一致。
 
 ```
-# EditorConfig 可帮助开发人员在不同的编辑器和编辑器之间定义并保持一致的 # 编码风格。
-# 不同编辑器和集成开发环境之间的编码风格
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
 # editorconfig.org
 
-根 = true
+root = true
 
 [*]
 
-# 我们建议您保持这些内容不变
+# We recommend you to keep these unchanged
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-# 根据自己的偏好更改这些设置
-indent_style = 空格
+# Change these settings to your own preference
+indent_style = space
 indent_size = 4
 
-[*.{ts,tsx,js,jsx,json,css,scss,yml,yaml,html,vue,md}] 缩进尺寸 = 2
-缩进大小 = 2
+[*.{ts,tsx,js,jsx,json,css,scss,yml,yaml,html,vue,md}]
+indent_size = 2
 
 [*.md]
 trim_trailing_whitespace = false
@@ -183,25 +180,24 @@ trim_trailing_whitespace = false
 
 示例
 
-``js
+```js
 // eslint.config.js
-import flypeng from '@flypeng/eslint-config'；
+import flypeng from '@flypeng/eslint-config';
 
-导出默认 [
-...flypeng()、
-{
-/**
-_ 如果不声明文件 Scope，其他文件也会引用此规则。
-_ 但其他文件的规则没有使用 @ typescript-eslint/eslint-plugin 插件，因此在 Lint 时会报错。
-_ 详细参考资料：https://github.com/eslint/eslint/issues/17485
-_/
-文件： ['**/\*.ts']、
-rules： {
-'@typescript-eslint/no-explicit-any'： 关闭'、
-},
-},
+export default [
+  ...flypeng(),
+  {
+    /**
+     * If you do not declare the file Scope, other files will also refer to this rule.
+     * But the rules of other files do not use the @ typescript-eslint/eslint-plugin plugin, so an error will be reported during Lint.
+     * Reference detail: https://github.com/eslint/eslint/issues/17485
+     */
+    files: ['**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
 ];
-
 ```
 
 ## ✍️ 关于使用 Prettier
@@ -225,4 +221,3 @@ rules： {
 V2 是对 V1 的重构，以适应 ESLint 的扁平化配置，并使用 Prettier 作为代码格式化工具。
 
 如果您需要调整 ESLint 的扁平化配置，那么您在内部使用的所有软件包都需要使用新版本的扁平化配置。幸运的是，ESLint 提供了一个适配方案 [eslintrc](https://github.com/eslint/eslintrc)，用于将旧配置转换为新配置。它用于将旧配置转换为新配置。
-```
