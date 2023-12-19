@@ -2,6 +2,8 @@
 
 ![@flypeng/eslint-config](https://img.shields.io/npm/v/%40flypeng%2Feslint-config?style=plastic&logo=npm&label=%40flypeng%2Feslint-config&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40flypeng%2Feslint-config) ![@flypeng/stylelint-config](https://img.shields.io/npm/v/%40flypeng%2Fstylelint-config?style=plastic&logo=npm&label=%40flypeng%2Fstylelint-config&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40flypeng%2Fstylelint-config)
 
+**English** | [简体中文](https://github.com/flingyp/lint-config/blob/main/README.zh-CN.md)
+
 - Single quotes, Semi
 - Share ESLint and Stylelint configurations
 - Code lint check based on Airbnb
@@ -213,3 +215,9 @@ First, if you are an individual developer and you have a good grasp of the overa
 Second: ESLint main responsibility is to verify the code rather than the code format , so for simple checksum automatic repair can be a certain degree of enlightenment to the role of formatting . But for the overall project code style ESLint does not guarantee that Prettier's main responsibility is to unify the overall style.
 
 Based on the above two points, I decided to open the use of Prettier.
+
+## ⚙️ About V1 to V2
+
+V2 is a refactoring of V1 in order to adapt ESLint's flat configuration and use Prettier as a code formatting tool.
+
+If you need to adapt ESLint's flattened configuration, then all the packages you use internally need to use the new version of the flattened configuration. Fortunately, ESLint has provided an adaptation scheme, [eslintrc](https://github.com/eslint/eslintrc), to convert the old configuration to the new one. It is used to convert the old configuration to the new one.
