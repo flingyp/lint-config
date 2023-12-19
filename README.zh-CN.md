@@ -220,4 +220,4 @@ export default [
 
 V2 是对 V1 的重构，以适应 ESLint 的扁平化配置，并使用 Prettier 作为代码格式化工具。
 
-如果您需要调整 ESLint 的扁平化配置，那么您在内部使用的所有软件包都需要使用新版本的扁平化配置。幸运的是，ESLint 提供了一个适配方案 [eslintrc](https://github.com/eslint/eslintrc)，用于将旧配置转换为新配置。它用于将旧配置转换为新配置。
+如果您需要调整 ESLint 的扁平化配置，那么您在内部使用的所有软件包都需要使用新版本的扁平化配置。幸运的是，ESLint 提供了一个适配方案 [eslintrc](https://github.com/eslint/eslintrc)，用于将旧配置转换为新配置。

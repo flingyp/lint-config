@@ -220,4 +220,4 @@ Based on the above two points, I decided to open the use of Prettier.
 
 V2 is a refactoring of V1 in order to adapt ESLint's flat configuration and use Prettier as a code formatting tool.
 
-If you need to adapt ESLint's flattened configuration, then all the packages you use internally need to use the new version of the flattened configuration. Fortunately, ESLint has provided an adaptation scheme, [eslintrc](https://github.com/eslint/eslintrc), to convert the old configuration to the new one. It is used to convert the old configuration to the new one.
+If you need to adapt ESLint's flattened configuration, then all the packages you use internally need to use the new version of the flattened configuration. Fortunately, ESLint has provided an adaptation scheme, [eslintrc](https://github.com/eslint/eslintrc), to convert the old configuration to the new one.
