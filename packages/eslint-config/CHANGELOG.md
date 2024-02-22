@@ -1,5 +1,27 @@
 # @flypeng/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- Upgrade @flypeng/tool-v2.0.0
+- 48e879d: flat configuration with ESLint integration
+
+### Patch Changes
+
+- 91fe288: overwrie typescript rules and fix global ignores config invalid
+- Updated dependencies [5069699]
+- Updated dependencies [79d1f9a]
+- Updated dependencies [91fe288]
+- Updated dependencies
+- Updated dependencies [48e879d]
+  - @flypeng/eslint-config-basic@2.0.0
+  - @flypeng/eslint-config-other@2.0.0
+  - @flypeng/eslint-config-javascript@2.0.0
+  - @flypeng/eslint-config-typescript@2.0.0
+  - @flypeng/eslint-config-react@2.0.0
+  - @flypeng/eslint-config-vue@2.0.0
+
 ## 2.0.0-beta.3
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @flypeng/eslint-config-basic
 
+## 2.0.0
+
+### Major Changes
+
+- Upgrade @flypeng/tool-v2.0.0
+- 48e879d: flat configuration with ESLint integration
+
+### Patch Changes
+
+- 5069699: feat: no-undef rule close
+- 91fe288: overwrie typescript rules and fix global ignores config invalid
+
 ## 2.0.0-beta.2
 
 ### Patch Changes

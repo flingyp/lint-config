@@ -1,5 +1,16 @@
 # @flypeng/eslint-config-other
 
+## 2.0.0
+
+### Major Changes
+
+- Upgrade @flypeng/tool-v2.0.0
+- 48e879d: flat configuration with ESLint integration
+
+### Patch Changes
+
+- 79d1f9a: feat: @eslint-config-other migrate to new eslint configuration system
+
 ## 2.0.0-beta.1
 
 ### Patch Changes

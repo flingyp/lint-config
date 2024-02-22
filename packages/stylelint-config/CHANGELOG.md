@@ -1,5 +1,11 @@
 # @flypeng/stylelint-config
 
+## 1.0.2
+
+### Patch Changes
+
+- 88bbd2c: feat: @flypeng/stylelint-config close rules
+
 ## 1.0.2-beta.0
 
 ### Patch Changes
