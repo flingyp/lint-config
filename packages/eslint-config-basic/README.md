@@ -1,7 +1,7 @@
 # @flypeng/eslint-config-basic
 
-公共规则配置
+使用 `@eslint/js` 提供的推荐配置和自定义 ESLint 常用规则
 
 ## 扩展包
 
-- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) 关闭所有不必要的或可能与 Prettier 冲突的规则。
+- [@eslint/js](https://github.com/eslint/eslint.git) ESLint 提供的 JavaScript 语言推荐配置。
