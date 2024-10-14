@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-react
 
+## 2.0.1
+
+### Patch Changes
+
+- update version of dependent packages
+
 ## 2.0.0
 
 ### Major Changes

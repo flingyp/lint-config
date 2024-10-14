@@ -1,7 +1,7 @@
 {
   "name": "@flypeng/eslint-config-other",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "flingyp's lint config of Markdown、JSON and YAML",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",

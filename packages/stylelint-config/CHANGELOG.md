@@ -1,5 +1,11 @@
 # @flypeng/stylelint-config
 
+## 1.0.3
+
+### Patch Changes
+
+- update version of dependent packages
+
 ## 1.0.2
 
 ### Patch Changes

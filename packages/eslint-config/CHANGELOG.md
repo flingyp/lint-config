@@ -1,5 +1,18 @@
 # @flypeng/eslint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- update version of dependent packages
+- Updated dependencies
+  - @flypeng/eslint-config-javascript@2.0.1
+  - @flypeng/eslint-config-typescript@2.0.1
+  - @flypeng/eslint-config-basic@2.0.1
+  - @flypeng/eslint-config-other@2.0.1
+  - @flypeng/eslint-config-react@2.0.1
+  - @flypeng/eslint-config-vue@2.0.1
+
 ## 2.0.0
 
 ### Major Changes
