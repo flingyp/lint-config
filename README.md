@@ -111,7 +111,7 @@ Install VSCode **ESLint**、**Stylelint**、**Prettier**、**Prettier ESLint** p
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.enable": true,
-  "eslint.experimental.useFlatConfig": true, // 启用ESLint新的配置系统
+  "eslint.useFlatConfig": true, // 启用ESLint新的配置系统
   "eslint.format.enable": true,
   "eslint.validate": [
     "javascript",
