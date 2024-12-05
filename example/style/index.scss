@@ -1,34 +1,50 @@
-.declaration-order {
-  /* Positioning */
-  position: absolute;
-  z-index: 10;
+.red {
+  font-size: 2px;
+}
 
-  /* Box Model */
-  display: block;
-  float: right;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  padding: 10px;
+.green {
+  font-size: 2px;
+}
 
-  /* Typography */
-  color: #888;
-  font:
-    normal 16px Helvetica,
-    sans-serif;
-  line-height: 1.3;
-  text-align: center;
+.blue {
+  font-size: 2px;
+}
 
-  /* Visual */
-  background-color: #eee;
-  border: 1px solid #888;
-  border-radius: 4px;
-  opacity: 1;
+.yellow {
+  font-size: 2px;
+}
 
-  /* Animation */
-  transition: all 1s;
+.orange {
+  font-size: 2px;
+}
 
-  /* Misc */
-  user-select: none;
-  inset: 0;
+.purple {
+  font-size: 2px;
+}
+
+.pink {
+  font-size: 2px;
+}
+
+.gray {
+  font-size: 2px;
+}
+
+.black {
+  font-size: 2px;
+}
+
+.white {
+  font-size: 2px;
+}
+
+.light {
+  font-size: 2px;
+}
+
+.dark {
+  font-size: 2px;
+}
+
+.light-gray {
 }

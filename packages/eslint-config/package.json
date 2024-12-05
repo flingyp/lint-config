@@ -27,6 +27,6 @@
     "@flypeng/eslint-config-typescript": "workspace:^",
     "@flypeng/eslint-config-vue": "workspace:^",
     "eslint-config-prettier": "^9.1.0",
-    "local-pkg": "^0.5.0"
+    "local-pkg": "^0.5.1"
   }
 }

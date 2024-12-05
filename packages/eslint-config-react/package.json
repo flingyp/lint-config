@@ -20,7 +20,7 @@
     "eslint": ">=8.23.0"
   },
   "dependencies": {
-    "@eslint/eslintrc": "^3.1.0",
-    "eslint-plugin-react": "^7.37.1"
+    "@eslint/eslintrc": "^3.2.0",
+    "eslint-plugin-react": "^7.37.2"
   }
 }
