@@ -1,7 +1,7 @@
 {
   "name": "@flypeng/eslint-config-typescript",
   "type": "module",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "flingyp's lint config of TypeScript",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
