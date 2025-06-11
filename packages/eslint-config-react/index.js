@@ -15,6 +15,7 @@ const compat = new FlatCompat({
   baseDirectory: dirName,
 });
 
+/** @type {import('eslint').Linter.Config[]} */
 const reactConfig = [
   ...compat.plugins('eslint-plugin-react'),
   ...compat.extends('plugin:react/recommended'),

@@ -9,6 +9,7 @@ const compat = new FlatCompat({
   baseDirectory: dirName,
 });
 
+/** @type {import('eslint').Linter.Config[]} */
 const jsonConfig = [
   ...compat.extends('plugin:jsonc/recommended-with-jsonc'),
   {

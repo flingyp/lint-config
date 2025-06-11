@@ -1,3 +1,4 @@
 import init from '@flypeng/eslint-config';
 
-export default init();
+/** @type {import('eslint').Linter.Config[]} */
+export default [...init()];

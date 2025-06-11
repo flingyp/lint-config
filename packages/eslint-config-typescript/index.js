@@ -14,6 +14,7 @@ const compat = new FlatCompat({
   baseDirectory: dirName,
 });
 
+/** @type {import('eslint').Linter.Config[]} */
 const typescriptConfig = [
   ...compat.plugins('@typescript-eslint'),
   ...compat.extends('plugin:@typescript-eslint/recommended'),

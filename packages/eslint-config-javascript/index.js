@@ -13,6 +13,7 @@ const compat = new FlatCompat({
   baseDirectory: dirName,
 });
 
+/** @type {import('eslint').Linter.Config[]} */
 const javaScriptConfig = [
   ...compat.extends('eslint-config-airbnb-base'),
   {

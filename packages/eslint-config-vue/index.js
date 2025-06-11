@@ -17,6 +17,7 @@ const compat = new FlatCompat({
   baseDirectory: dirName,
 });
 
+/** @type {import('eslint').Linter.Config[]} */
 const vueConfig = [
   ...compat.plugins('eslint-plugin-vue'),
   ...compat.extends('plugin:vue/vue3-recommended'),

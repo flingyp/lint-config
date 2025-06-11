@@ -2,7 +2,7 @@
   "name": "@flypeng/lint-config-monorepo",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.5.1",
+  "packageManager": "pnpm@9.12.3",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
   "scripts": {
@@ -10,20 +10,20 @@
     "lint:fix": "prettier . --write && eslint . --fix && stylelint --fix \"**/*.{css,scss,vue}\""
   },
   "devDependencies": {
-    "@changesets/cli": "^2.28.1",
+    "@changesets/cli": "^2.29.4",
     "@flypeng/eslint-config": "workspace:^",
     "@flypeng/stylelint-config": "workspace:^",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "eslint": "^9.22.0",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "eslint": "^9.28.0",
     "prettier": "^3.5.3",
     "scss": "^0.2.4",
-    "stylelint": "^16.16.0",
-    "typescript": "^5.8.2"
+    "stylelint": "^16.20.0",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "vue": "^3.5.13"
+    "vue": "^3.5.16"
   }
 }
