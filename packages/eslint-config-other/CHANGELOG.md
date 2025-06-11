@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-other
 
+## 2.0.4
+
+### Patch Changes
+
+- update packages
+
 ## 2.0.3
 
 ### Patch Changes

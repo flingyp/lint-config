@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "prettier . --write && eslint . && stylelint \"**/*.{css,scss,vue}\"",
-    "lint:fix": "prettier . --write && eslint . --fix && stylelint --fix \"**/*.{css,scss,vue}\""
+    "lint:fix": "prettier . --write && eslint . --fix && stylelint --fix \"**/*.{css,scss,vue}\"",
+    "changeset": "npx changeset && npx changeset version",
+    "release": "pnpm publish -r"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
