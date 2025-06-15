@@ -48,6 +48,7 @@ pnpm add eslint stylelint prettier @flypeng/eslint-config @flypeng/stylelint-con
 // eslint.config.js
 import flypeng from '@flypeng/eslint-config';
 
+/** @type {import('eslint').Linter.Config[]} */
 export default flypeng();
 ```
 
@@ -57,6 +58,7 @@ export default flypeng();
 // eslint.config.js
 const flypeng = require('@flypeng/eslint-config').default;
 
+/** @type {import('eslint').Linter.Config[]} */
 module.exports = flypeng();
 ```
 

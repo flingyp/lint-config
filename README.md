@@ -48,6 +48,7 @@ With ESM
 // eslint.config.js
 import flypeng from '@flypeng/eslint-config';
 
+/** @type {import('eslint').Linter.Config[]} */
 export default flypeng();
 ```
 
@@ -57,6 +58,7 @@ With CJS
 // eslint.config.js
 const flypeng = require('@flypeng/eslint-config').default;
 
+/** @type {import('eslint').Linter.Config[]} */
 module.exports = flypeng();
 ```
 
