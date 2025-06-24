@@ -77,8 +77,8 @@ module.exports = flypeng();
   "semi": true,
   "singleQuote": true,
   "bracketSpacing": true,
-  "printWidth": 120,
-  "vueIndentScriptAndStyle": false
+  "vueIndentScriptAndStyle": false,
+  "plugins": ["@prettier/plugin-oxc"]
 }
 ```
 

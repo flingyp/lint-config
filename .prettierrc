@@ -2,5 +2,6 @@
     "semi": true,
     "singleQuote": true,
     "bracketSpacing": true,
-    "vueIndentScriptAndStyle": false
+    "vueIndentScriptAndStyle": false,
+    "plugins": ["@prettier/plugin-oxc"]
 }
