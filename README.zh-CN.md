@@ -26,7 +26,7 @@
 
 ### 安装软件包
 
-pnpm add eslint stylelint prettier @flypeng/eslint-config @flypeng/stylelint-config -D`
+pnpm add eslint stylelint prettier @prettier/plugin-oxc @flypeng/eslint-config @flypeng/stylelint-config -D`
 
 ### 配置`.eslintrc`或`eslint.js`、`.stylelintrc`。
 
@@ -38,14 +38,14 @@ pnpm add eslint stylelint prettier @flypeng/eslint-config @flypeng/stylelint-con
 }
 ```
 
-#### `eslint.config.js` (ESLint > 9 && Enable eslint new configuration)
+#### `eslint.config.mjs` (ESLint > 9 && Enable eslint new configuration)
 
 使用 ESM
 
 - `"type": "module"` in `package.json`
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 import flypeng from '@flypeng/eslint-config';
 
 /** @type {import('eslint').Linter.Config[]} */

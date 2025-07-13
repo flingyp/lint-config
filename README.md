@@ -26,7 +26,7 @@
 
 ### Install packages
 
-`pnpm add eslint stylelint prettier @flypeng/eslint-config @flypeng/stylelint-config -D`
+`pnpm add eslint stylelint prettier @prettier/plugin-oxc @flypeng/eslint-config @flypeng/stylelint-config -D`
 
 ### Config `.eslintrc` or `eslint.config.js`、`.stylelintrc`
 
@@ -38,14 +38,14 @@
 }
 ```
 
-#### `eslint.config.js` (ESLint > 9 && Enable eslint new configuration)
+#### `eslint.config.mjs` (ESLint > 9 && Enable eslint new configuration)
 
 With ESM
 
 - `"type": "module"` in `package.json`
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 import flypeng from '@flypeng/eslint-config';
 
 /** @type {import('eslint').Linter.Config[]} */
