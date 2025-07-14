@@ -1,0 +1,79 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 环境配置
+
+## 编辑器推荐配置
+
+本项目推荐使用 Visual Studio Code 作为开发环境，并配置以下扩展和设置：
+
+### 推荐的 VSCode 扩展
+
+- [ESLint](mdc:https:/marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](mdc:https:/marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Stylelint](mdc:https:/marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+- [Prettier ESLint](mdc:https:/marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint)
+- [EditorConfig](mdc:https:/marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+
+### VSCode 设置
+
+推荐在 `.vscode/settings.json` 中使用以下配置：
+
+```json
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "jsx",
+    "tsx",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5",
+    "yaml"
+  ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "scss", "sass", "vue", "postcss"]
+}
+```
+
+## EditorConfig
+
+项目使用 [.editorconfig](mdc:.editorconfig) 确保团队中不同编辑器的行为一致：
+
+```
+# 主要配置
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+
+[*.{ts,tsx,js,jsx,json,css,scss,yml,yaml,html,vue,md}]
+indent_size = 2
+```
+
+## 项目依赖
+
+- Node.js >= 18
+- PNPM >= 9.12.3
+
+这些配置有助于确保开发环境的一致性和代码风格的统一。

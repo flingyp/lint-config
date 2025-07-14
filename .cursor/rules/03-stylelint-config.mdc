@@ -1,0 +1,45 @@
+---
+description: 规则描述了项目 Stylelint 包如何介绍和使用
+globs:
+alwaysApply: false
+---
+# Stylelint 配置
+
+## 配置结构
+
+项目提供了一个统一的 Stylelint 配置包：
+
+- [@flypeng/stylelint-config](mdc:packages/stylelint-config) - 提供 CSS/SCSS/Vue 样式文件的规范配置
+
+## 支持的文件类型
+
+此配置支持以下文件类型的样式规范检查：
+
+- CSS
+- SCSS/SASS
+- Vue 单文件组件中的样式部分
+
+## 使用方法
+
+在项目中使用时，安装 `@flypeng/stylelint-config` 包，然后在 Stylelint 配置文件中引用：
+
+```json
+// .stylelintrc
+{
+  "extends": "@flypeng/stylelint-config"
+}
+```
+
+## 配合 VSCode 使用
+
+在 VSCode 中配置 Stylelint 扩展，可以在 `.vscode/settings.json` 中添加以下配置：
+
+```json
+{
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "scss", "sass", "vue", "postcss"]
+}
+```

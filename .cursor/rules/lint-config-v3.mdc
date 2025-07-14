@@ -1,0 +1,12 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# `lint-config` V3 版本改造
+
+## 改造目标
+
+- 使用 TypeScript 改造 Lint 相关包
+- 使用 Tsup 打包工具
+- 所有 Lint 相关包都要支持 ESLint 扁平配置。如果有第三方依赖包不支持，在标注注释出来 `FIX: 不支持扁平配置`

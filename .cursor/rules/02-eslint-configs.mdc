@@ -1,0 +1,47 @@
+---
+description: 规则描述了项目 ESLint 包结构
+globs:
+alwaysApply: false
+---
+# ESLint 配置包结构
+
+## 配置包层级关系
+
+项目使用 ESLint 的扁平配置系统（Flat Config），配置包之间存在以下层级关系：
+
+```
+@flypeng/eslint-config
+  ├── eslint-config-javascript
+  ├── eslint-config-typescript
+  ├── eslint-config-vue
+  ├── eslint-config-react
+  ├── eslint-config-other
+  └── eslint-config-basic (所有配置的基础)
+```
+
+## 各配置包职责
+
+- [@flypeng/eslint-config](mdc:packages/eslint-config) - 主要配置入口，整合了所有其他配置
+- [@flypeng/eslint-config-basic](mdc:packages/eslint-config-basic) - 提供基础 ESLint 规则配置
+- [@flypeng/eslint-config-javascript](mdc:packages/eslint-config-javascript) - JavaScript 专用规则
+- [@flypeng/eslint-config-typescript](mdc:packages/eslint-config-typescript) - TypeScript 专用规则
+- [@flypeng/eslint-config-vue](mdc:packages/eslint-config-vue) - Vue 专用规则
+- [@flypeng/eslint-config-react](mdc:packages/eslint-config-react) - React 专用规则
+- [@flypeng/eslint-config-other](mdc:packages/eslint-config-other) - 其他文件类型（JSON、YAML、Markdown 等）的规则
+
+## 使用方法
+
+在项目中使用时，通常只需要安装主包 `@flypeng/eslint-config`，然后在 ESLint 配置文件中引用：
+
+```js
+// ESLint >= 9 (新配置系统)
+import flypeng from '@flypeng/eslint-config';
+
+export default flypeng();
+
+// ESLint < 9 (旧配置系统)
+// .eslintrc
+{
+  "extends": "@flypeng/eslint-config"
+}
+```

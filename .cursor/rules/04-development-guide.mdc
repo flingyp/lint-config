@@ -1,0 +1,67 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 开发指南
+
+## 项目设置
+
+此项目使用 PNPM 作为包管理器，使用工作空间（Workspace）功能管理多个包。
+
+主要配置文件：
+- [package.json](mdc:package.json) - 项目配置
+- [pnpm-workspace.yaml](mdc:pnpm-workspace.yaml) - 工作空间配置
+
+## 开发流程
+
+1. 安装依赖：
+   ```bash
+   pnpm install
+   ```
+
+2. 代码检查：
+   ```bash
+   pnpm lint
+   ```
+
+3. 自动修复代码问题：
+   ```bash
+   pnpm lint:fix
+   ```
+
+## 发布流程
+
+此项目使用 [Changeset](mdc:https:/github.com/changesets/changesets) 管理版本和发布：
+
+1. 创建变更日志：
+   ```bash
+   pnpm changeset
+   ```
+
+2. 版本更新和发布：
+   ```bash
+   pnpm release
+   ```
+
+## 包结构约定
+
+为了保持项目结构一致，新增的配置包应遵循以下规范：
+
+1. 命名规范：
+   - ESLint 配置包：`eslint-config-*`
+   - Stylelint 配置包：`stylelint-config-*`
+
+2. 目录结构：
+   - `index.js` - 主入口文件
+   - `package.json` - 包配置
+   - `README.md` - 包文档
+
+## 配置扩展原则
+
+在扩展或修改现有配置时，请遵循以下原则：
+
+1. 保持向后兼容性
+2. 遵循 [ESLint Flat Config](mdc:https:/eslint.org/docs/latest/use/configure/configuration-files-new) 的设计原则
+3. 配置应该模块化，便于组合和扩展
+4. 修改规则时应在 CHANGELOG.md 中记录变更
