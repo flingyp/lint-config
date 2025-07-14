@@ -17,11 +17,12 @@
     "dist"
   ],
   "peerDependencies": {
-    "eslint": ">=8.23.0",
+    "eslint": ">=9.0.0",
     "prettier": ">=3.0.0"
   },
   "dependencies": {
     "@flypeng/eslint-config-basic": "workspace:^",
+    "@flypeng/eslint-config-common": "workspace:^",
     "@flypeng/eslint-config-javascript": "workspace:^",
     "@flypeng/eslint-config-other": "workspace:^",
     "@flypeng/eslint-config-react": "workspace:^",

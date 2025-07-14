@@ -1,4 +1,4 @@
-# @flypeng/eslint-config-javascript
+# @flypeng/eslint-config-javascript（已废弃）
 
 基于 [Airbnb](https://github.com/airbnb/javascript) 的 JavaScript 代码规范扩展。 Airbnb 风格是指一种流行的 JavaScript 代码风格，旨在提高代码的可读性和可维护性。
 

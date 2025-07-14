@@ -1,16 +1,15 @@
 {
-  "name": "@flypeng/eslint-config-react",
+  "name": "@flypeng/eslint-config-common",
   "type": "module",
-  "version": "2.0.5",
-  "description": "flingyp's lint config of React",
+  "version": "0.0.0",
+  "description": "flingyp's common config of Common",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
   "homepage": "https://github.com/flingyp/lint-config",
   "keywords": [
     "lint",
     "eslint",
-    "ESLint Config",
-    "React ESlint Config"
+    "ESLint Common Config"
   ],
   "main": "dist/index.js",
   "files": [
@@ -21,8 +20,8 @@
     "eslint": ">=9.0.0"
   },
   "dependencies": {
-    "@eslint/eslintrc": "^3.3.1",
-    "eslint-plugin-react": "^7.37.5"
+    "globals": "^13.24.0",
+    "local-pkg": "^0.5.1"
   },
   "types": "dist/index.d.ts",
   "scripts": {

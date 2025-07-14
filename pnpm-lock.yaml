@@ -72,6 +72,9 @@ importers:
       '@flypeng/eslint-config-basic':
         specifier: workspace:^
         version: link:../eslint-config-basic
+      '@flypeng/eslint-config-common':
+        specifier: workspace:^
+        version: link:../eslint-config-common
       '@flypeng/eslint-config-javascript':
         specifier: workspace:^
         version: link:../eslint-config-javascript
@@ -88,7 +91,7 @@ importers:
         specifier: workspace:^
         version: link:../eslint-config-vue
       eslint:
-        specifier: '>=8.23.0'
+        specifier: '>=9.0.0'
         version: 9.31.0(jiti@2.4.2)
       eslint-config-prettier:
         specifier: ^9.1.0
@@ -106,7 +109,19 @@ importers:
         specifier: ^9.29.0
         version: 9.31.0
       eslint:
-        specifier: '>=8.23.0'
+        specifier: '>=9.0.0'
+        version: 9.31.0(jiti@2.4.2)
+      globals:
+        specifier: ^13.24.0
+        version: 13.24.0
+      local-pkg:
+        specifier: ^0.5.1
+        version: 0.5.1
+
+  packages/eslint-config-common:
+    dependencies:
+      eslint:
+        specifier: '>=9.0.0'
         version: 9.31.0(jiti@2.4.2)
       globals:
         specifier: ^13.24.0
@@ -121,7 +136,7 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
       eslint:
-        specifier: '>=8.23.0'
+        specifier: '>=9.0.0'
         version: 9.31.0(jiti@2.4.2)
       eslint-config-airbnb-base:
         specifier: ^15.0.0
@@ -151,7 +166,7 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
       eslint:
-        specifier: '>=8.23.0'
+        specifier: '>=9.0.0'
         version: 9.31.0(jiti@2.4.2)
       eslint-plugin-react:
         specifier: ^7.37.5
@@ -169,7 +184,7 @@ importers:
         specifier: ^8.35.0
         version: 8.36.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3)
       eslint:
-        specifier: '>=8.23.0'
+        specifier: '>=9.0.0'
         version: 9.31.0(jiti@2.4.2)
       typescript:
         specifier: '>=4.0.0'
@@ -184,7 +199,7 @@ importers:
         specifier: ^8.35.0
         version: 8.36.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3)
       eslint:
-        specifier: '>=8.23.0'
+        specifier: '>=9.0.0'
         version: 9.31.0(jiti@2.4.2)
       eslint-plugin-vue:
         specifier: ^9.33.0
@@ -6756,19 +6771,19 @@ snapshots:
     dependencies:
       htmlparser2: 3.10.1
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss@8.5.6)
 
   postcss-html@0.36.0(postcss-syntax@0.36.2)(postcss@8.5.6):
     dependencies:
       htmlparser2: 3.10.1
       postcss: 8.5.6
-      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss@8.5.6)
 
   postcss-jsx@0.36.4(postcss-syntax@0.36.2)(postcss@7.0.39):
     dependencies:
       '@babel/core': 7.28.0
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss@8.5.6)
     transitivePeerDependencies:
       - supports-color
 
@@ -6786,7 +6801,7 @@ snapshots:
   postcss-markdown@0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39):
     dependencies:
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss@8.5.6)
       remark: 10.0.1
       unist-util-find-all-after: 1.0.5
 
@@ -6847,15 +6862,11 @@ snapshots:
     dependencies:
       postcss: 8.5.6
 
-  postcss-syntax@0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39):
+  postcss-syntax@0.36.2(postcss-html@0.36.0)(postcss@8.5.6):
     dependencies:
-      postcss: 7.0.39
+      postcss: 8.5.6
     optionalDependencies:
       postcss-html: 0.36.0(postcss-syntax@0.36.2)(postcss@8.5.6)
-      postcss-jsx: 0.36.4(postcss-syntax@0.36.2)(postcss@7.0.39)
-      postcss-less: 3.1.4
-      postcss-markdown: 0.36.0(postcss-syntax@0.36.2)(postcss@7.0.39)
-      postcss-scss: 2.1.1
 
   postcss-value-parser@3.3.1: {}
 
@@ -7542,7 +7553,7 @@ snapshots:
       postcss-sass: 0.3.5
       postcss-scss: 2.1.1
       postcss-selector-parser: 3.1.2
-      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss-jsx@0.36.4)(postcss-less@3.1.4)(postcss-markdown@0.36.0)(postcss-scss@2.1.1)(postcss@7.0.39)
+      postcss-syntax: 0.36.2(postcss-html@0.36.0)(postcss@8.5.6)
       postcss-value-parser: 3.3.1
       resolve-from: 4.0.0
       signal-exit: 3.0.7
