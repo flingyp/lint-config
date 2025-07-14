@@ -13,9 +13,10 @@
     "Javascript ESlint Config",
     "Airbnb Javascript Style"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "dist"
   ],
   "peerDependencies": {
     "eslint": ">=8.23.0"
@@ -23,5 +24,10 @@
   "dependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "eslint-config-airbnb-base": "^15.0.0"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
   }
 }

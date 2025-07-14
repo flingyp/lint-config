@@ -12,9 +12,10 @@
     "ESLint Config",
     "React ESlint Config"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "dist"
   ],
   "peerDependencies": {
     "eslint": ">=8.23.0"
@@ -22,5 +23,10 @@
   "dependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "eslint-plugin-react": "^7.37.5"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
   }
 }

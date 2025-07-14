@@ -1,8 +1,8 @@
 import js from '@eslint/js';
 import globals from 'globals';
+import type { Linter } from 'eslint';
 
-/** @type {import('eslint').Linter.Config[]} */
-const basicConfig = [
+const basicConfig: Linter.FlatConfig[] = [
   {
     ...js.configs.recommended,
     languageOptions: {

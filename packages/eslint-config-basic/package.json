@@ -11,9 +11,10 @@
     "eslint",
     "ESLint Basic Config"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "dist"
   ],
   "peerDependencies": {
     "eslint": ">=8.23.0"
@@ -22,5 +23,10 @@
     "@eslint/js": "^9.29.0",
     "globals": "^13.24.0",
     "local-pkg": "^0.5.1"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
   }
 }
