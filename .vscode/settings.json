@@ -2,6 +2,9 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.inlineSuggest.showToolbar": "onHover",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   "eslint.enable": true,
   "eslint.useFlatConfig": true,
   "eslint.format.enable": true,
@@ -20,6 +23,7 @@
     "json5",
     "yaml"
   ],
+  "oxc.enable": false,
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,

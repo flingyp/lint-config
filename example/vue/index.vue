@@ -1,12 +1,21 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+defineProps({
+  name: {
+    type: String,
+  },
+});
+
+const emit = defineEmits(['update:name']);
+
 const todoItems = ref([{ id: 1, done: false, text: '' }]);
 const message = ref('Hello World');
 const sumVueValue = ref(0);
 const add = (value: number) => {
   sumVueValue.value += value;
 };
+const test = () => {};
 </script>
 
 <template>

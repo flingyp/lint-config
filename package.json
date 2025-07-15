@@ -6,8 +6,8 @@
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",
   "scripts": {
-    "eslint:lint": "eslint .",
-    "eslint:fix": "eslint . --fix",
+    "eslint:lint": "pnpm run build && eslint .",
+    "eslint:fix": "pnpm run build && eslint . --fix",
     "stylelint:lint": "stylelint \"**/*.{css,scss,vue}\"",
     "stylelint:fix": "stylelint \"**/*.{css,scss,vue}\" --fix",
     "lint": "prettier . --write && eslint . && stylelint \"**/*.{css,scss,vue}\"",

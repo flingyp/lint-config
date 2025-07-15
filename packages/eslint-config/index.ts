@@ -9,7 +9,7 @@ import reactConfig from '@flypeng/eslint-config-react';
 import otherConfig from '@flypeng/eslint-config-other';
 import prettierConfig from 'eslint-config-prettier';
 
-const scopeFile = (files: string[], config: any): Linter.Config[] =>
+const scopeFile = (files: string[], config: Linter.Config[]): Linter.Config[] =>
   config.map((item: Linter.Config) => ({
     ...item,
     files,
@@ -54,7 +54,5 @@ if (isPackageExists('prettier')) {
 }
 
 eslintConfig.push(...lintBasic, ...lintCommon);
-
-console.log('eslintConfig:', eslintConfig);
 
 export default () => eslintConfig;
