@@ -12,8 +12,8 @@
     "ESLint Config"
   ],
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
     "dist"
   ],
   "peerDependencies": {
@@ -26,7 +26,6 @@
     "eslint-plugin-markdown": "^3.0.1",
     "jsonc-eslint-parser": "^2.4.0"
   },
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"

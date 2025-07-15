@@ -9,7 +9,7 @@ import reactConfig from '@flypeng/eslint-config-react';
 import otherConfig from '@flypeng/eslint-config-other';
 import prettierConfig from 'eslint-config-prettier';
 
-const scopeFile = (config: any[], files: string[]): Linter.Config[] =>
+const scopeFile = (config: any, files: string[]): Linter.Config[] =>
   config.map((item) => ({
     ...item,
     files,

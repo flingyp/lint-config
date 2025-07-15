@@ -14,8 +14,8 @@
     "Airbnb Javascript Style"
   ],
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
     "dist"
   ],
   "peerDependencies": {
@@ -25,7 +25,6 @@
     "@eslint/eslintrc": "^3.3.1",
     "eslint-config-airbnb-base": "^15.0.0"
   },
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"

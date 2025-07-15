@@ -13,8 +13,8 @@
     "Vue ESlint Config"
   ],
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
     "dist"
   ],
   "peerDependencies": {
@@ -26,7 +26,6 @@
     "eslint-plugin-vue": "^9.33.0",
     "vue-eslint-parser": "^9.4.3"
   },
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"

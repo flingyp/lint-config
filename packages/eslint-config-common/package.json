@@ -12,18 +12,13 @@
     "ESLint Common Config"
   ],
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
     "dist"
   ],
   "peerDependencies": {
     "eslint": ">=9.0.0"
   },
-  "dependencies": {
-    "globals": "^13.24.0",
-    "local-pkg": "^0.5.1"
-  },
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"

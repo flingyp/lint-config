@@ -12,8 +12,8 @@
     "ESLint Config"
   ],
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "index.js",
     "dist"
   ],
   "peerDependencies": {
@@ -31,7 +31,6 @@
     "eslint-config-prettier": "^9.1.0",
     "local-pkg": "^0.5.1"
   },
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
