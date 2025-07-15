@@ -61,12 +61,13 @@ const flypeng = require('@flypeng/eslint-config').default;
 module.exports = flypeng();
 ```
 
-#### `.stylelintrc`
+#### `.stylelint.config.mjs`
 
-```json
-{
-  "extends": "@flypeng/stylelint-config"
-}
+```js
+/** @type {import('stylelint').Config} */
+export default {
+  extends: '@flypeng/stylelint-config',
+};
 ```
 
 ### 配置 `.prettierrc` 和 `.prettierignore`
@@ -111,6 +112,11 @@ module.exports = flypeng();
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
   "eslint.enable": true,
   "eslint.useFlatConfig": true, // 启用ESLint新的配置系统
   "eslint.format.enable": true,
@@ -177,7 +183,7 @@ trim_trailing_whitespace = false
 
 ## 🏍️ 重写规则
 
-如果需要重写规则，很可能需要指定文件范围，因为除 `@flypeng/eslint-config-javascript` 以外的软件包所使用的规则都是针对特定文件的插件。如果不声明文件范围，就会出现意外错误。
+如果需要重写规则，很可能需要指定文件范围，因为除 `@flypeng/eslint-config-basic` 以外的软件包所使用的规则都是针对特定文件的插件。如果不声明文件范围，就会出现意外错误。
 
 示例
 

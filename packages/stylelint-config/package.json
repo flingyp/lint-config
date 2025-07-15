@@ -1,6 +1,6 @@
 {
   "name": "@flypeng/stylelint-config",
-  "type": "commonjs",
+  "type": "module",
   "version": "1.0.7",
   "description": "flingyp's lint config of Style",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
@@ -11,13 +11,22 @@
     "Stylelint",
     "Stylelint Config"
   ],
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "files": [
-    "index.js"
+    "dist"
   ],
   "peerDependencies": {
     "prettier": ">=3.0.0",
-    "stylelint": ">=15.0.0"
+    "stylelint": ">=16.0.0"
   },
   "dependencies": {
     "local-pkg": "^0.5.1",
@@ -27,5 +36,14 @@
     "stylelint-config-standard-scss": "^14.0.0",
     "stylelint-order": "^6.0.4",
     "stylelint-prettier": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "stylelint": "^16.21.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsup --minify"
   }
 }

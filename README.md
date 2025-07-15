@@ -61,12 +61,13 @@ const flypeng = require('@flypeng/eslint-config').default;
 module.exports = flypeng();
 ```
 
-#### `.stylelintrc`
+#### `.stylelint.config.mjs`
 
-```json
-{
-  "extends": "@flypeng/stylelint-config"
-}
+```js
+/** @type {import('stylelint').Config} */
+export default {
+  extends: '@flypeng/stylelint-config',
+};
 ```
 
 ### Config `.prettierrc` and `.prettierignore`
@@ -111,8 +112,13 @@ Install VSCode **ESLint**、**Stylelint**、**Prettier**、**Prettier ESLint** p
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
   "eslint.enable": true,
-  "eslint.useFlatConfig": true, // Enable ESLint new configuration system
+  "eslint.useFlatConfig": true,
   "eslint.format.enable": true,
   "eslint.validate": [
     "javascript",
@@ -177,7 +183,7 @@ trim_trailing_whitespace = false
 
 ## 🏍️ Overwrite rules
 
-If you need to rewrite rules, you probably need to specify files scope, because the rules used by packages other than `@flypeng/eslint-config-javascript` are plugins for specific files. If you do not declare the file scope, unexpected errors will occur.
+If you need to rewrite rules, you probably need to specify files scope, because the rules used by packages other than `@flypeng/eslint-config-basic` are plugins for specific files. If you do not declare the file scope, unexpected errors will occur.
 
 Examples:
 
