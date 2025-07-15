@@ -222,3 +222,16 @@ Based on the above two points, I decided to open the use of Prettier.
 V2 is a refactoring of V1 in order to adapt ESLint's flat configuration and use Prettier as a code formatting tool.
 
 If you need to adapt ESLint's flattened configuration, then all the packages you use internally need to use the new version of the flattened configuration. Fortunately, ESLint has provided an adaptation scheme, [eslintrc](https://github.com/eslint/eslintrc), to convert the old configuration to the new one.
+
+## 🚀 About V2 to V3
+
+V3 brings several important updates and optimizations:
+
+- Use TypeScript to rewrite all configuration packages
+- Removed `@flypeng/eslint-config-javascript` package, as its functionality is now integrated into `@flypeng/eslint-config-basic`
+- Enhanced compatibility with ESLint v9
+- Improved support for modern JavaScript features
+- Optimized rule sets for better performance and developer experience
+- Updated dependencies to their latest stable versions
+
+These changes make the configuration more streamlined and easier to maintain while keeping up with the latest standards in the JavaScript ecosystem.

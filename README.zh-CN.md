@@ -222,3 +222,16 @@ export default [
 V2 是对 V1 的重构，以适应 ESLint 的扁平化配置，并使用 Prettier 作为代码格式化工具。
 
 如果您需要调整 ESLint 的扁平化配置，那么您在内部使用的所有软件包都需要使用新版本的扁平化配置。幸运的是，ESLint 提供了一个适配方案 [eslintrc](https://github.com/eslint/eslintrc)，用于将旧配置转换为新配置。
+
+## 🚀 关于 V2 到 V3
+
+V3 带来了几项重要的更新和优化：
+
+- 使用 TypeScript 重写所有配置包
+- 移除了 `@flypeng/eslint-config-javascript` 包，其功能现已集成到 `@flypeng/eslint-config-basic` 中
+- 增强了与 ESLint v9 的兼容性
+- 改进了对现代 JavaScript 特性的支持
+- 优化了规则集，提升了性能和开发者体验
+- 将依赖更新到最新的稳定版本
+
+这些变更使配置更加精简，更容易维护，同时跟上 JavaScript 生态系统的最新标准。

@@ -25,7 +25,7 @@
     "eslint-plugin-react": "^7.37.5"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup --minify",
     "dev": "tsup --watch"
   }
 }

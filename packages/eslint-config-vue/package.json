@@ -27,7 +27,7 @@
     "vue-eslint-parser": "^9.4.3"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup --minify",
     "dev": "tsup --watch"
   }
 }

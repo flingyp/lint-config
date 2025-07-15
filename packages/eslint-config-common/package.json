@@ -20,7 +20,7 @@
     "eslint": ">=9.0.0"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup --minify",
     "dev": "tsup --watch"
   }
 }

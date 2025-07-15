@@ -18,7 +18,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup --minify",
     "dev": "tsup --watch"
   },
   "peerDependencies": {
