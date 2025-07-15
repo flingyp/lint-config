@@ -20,11 +20,11 @@ const lintBasic = basicConfig();
 const lintTypeScript = typeScriptConfig();
 const lintVue = vueConfig();
 const lintReact = reactConfig();
-const { jsonConfig: lintJson, markdownConfig: lintMd } = otherConfig();
+const { jsonConfig: lintJson, markdownConfig: lintMd } = otherConfig;
 
 const eslintConfig: Linter.Config[] = [
-  ...scopeFile(['**/*.json', '**/*.json5', '**/*.jsonc'], lintJson),
-  ...scopeFile(['**/*.md'], lintMd),
+  ...scopeFile(['**/*.json', '**/*.json5', '**/*.jsonc'], lintJson()),
+  ...scopeFile(['**/*.md'], lintMd()),
 ];
 
 if (isPackageExists('typescript')) {

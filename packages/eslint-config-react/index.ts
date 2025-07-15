@@ -12,6 +12,11 @@ export default (): Linter.Config[] => [
         ...globals.browser,
       },
     },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
   },
   {
     rules: {

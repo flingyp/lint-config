@@ -1,32 +1,19 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import eslintJsoncParser from 'jsonc-eslint-parser';
+import eslintPluginJsonc from 'eslint-plugin-jsonc';
+import markdown from '@eslint/markdown';
+import { Linter } from 'eslint';
 
-const fileName = fileURLToPath(import.meta.url);
-const dirName = path.dirname(fileName);
-const compat = new FlatCompat({
-  baseDirectory: dirName,
-});
-
-/** @type {import('eslint').Linter.Config[]} */
-const jsonConfig = [
-  ...compat.extends('plugin:jsonc/recommended-with-jsonc'),
+export const jsonConfig = (): Linter.Config[] => [
+  ...eslintPluginJsonc.configs['flat/recommended-with-jsonc'],
   {
-    languageOptions: {
-      parser: eslintJsoncParser,
+    rules: {},
+  },
+];
+
+export const markdownConfig = (): Linter.Config[] => [
+  ...markdown.configs.processor,
+  {
+    rules: {
+      'no-irregular-whitespace': 'off',
     },
   },
 ];
-
-const markdownConfig = [
-  ...compat.extends('plugin:markdown/recommended'),
-  {
-    processor: 'markdown/markdown',
-  },
-];
-
-export default () => ({
-  jsonConfig,
-  markdownConfig,
-});
