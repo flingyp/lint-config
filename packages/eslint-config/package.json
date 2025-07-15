@@ -28,7 +28,7 @@
     "@flypeng/eslint-config-react": "workspace:^",
     "@flypeng/eslint-config-typescript": "workspace:^",
     "@flypeng/eslint-config-vue": "workspace:^",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.1.5",
     "local-pkg": "^0.5.1"
   },
   "scripts": {
