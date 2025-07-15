@@ -1,4 +1,4 @@
-# @flypeng/eslint-config-javascript
+# @flypeng/eslint-config-javascript（已弃用）
 
 > JavaScript 专用 ESLint 配置，基于 ESLint 推荐规则
 

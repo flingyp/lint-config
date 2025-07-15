@@ -180,6 +180,9 @@ importers:
       eslint:
         specifier: '>=9.0.0'
         version: 9.31.0(jiti@2.4.2)
+      globals:
+        specifier: ^16.3.0
+        version: 16.3.0
       typescript:
         specifier: '>=4.0.0'
         version: 5.8.3
