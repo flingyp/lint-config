@@ -1,39 +1,21 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import { Linter } from 'eslint';
+import react from 'eslint-plugin-react';
+import globals from 'globals';
 
-// import reactRecommended from 'eslint-plugin-react/configs/recommended';
-// import reactJsxRuntime from 'eslint-plugin-react/configs/jsx-runtime';
-
-/**
- * TIP: 需要使用 @eslint/eslintrc 将旧配置系统配置转换为新配置系统
- * https://eslint.org/docs/latest/use/configure/migration-guide#using-eslintrc-configs-in-flat-config
- */
-const fileName = fileURLToPath(import.meta.url);
-const dirName = path.dirname(fileName);
-const compat = new FlatCompat({
-  baseDirectory: dirName,
-});
-
-/** @type {import('eslint').Linter.Config[]} */
-const reactConfig = [
-  ...compat.plugins('eslint-plugin-react'),
-  ...compat.extends('plugin:react/recommended'),
-  ...compat.extends('plugin:react/jsx-runtime'),
+export default (): Linter.Config[] => [
   {
+    ...react.configs.flat.all,
     languageOptions: {
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
-    settings: {
-      react: {
-        version: 'detect',
+      ...react.configs.flat.recommended.languageOptions,
+      globals: {
+        ...globals.serviceworker,
+        ...globals.browser,
       },
     },
   },
+  {
+    rules: {
+      'react/jsx-no-literals': 'off',
+    },
+  },
 ];
-
-export default () => reactConfig;

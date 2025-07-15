@@ -21,7 +21,7 @@
     "eslint": ">=9.0.0"
   },
   "dependencies": {
-    "@eslint/eslintrc": "^3.3.1",
+    "globals": "^16.3.0",
     "eslint-plugin-react": "^7.37.5"
   },
   "scripts": {

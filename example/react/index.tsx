@@ -1,20 +1,19 @@
-import { useState } from 'react';
+import React from 'react';
 
-export default function App() {
-  const [count, setCount] = useState(0);
+function App() {
+  const [count, setCount] = React.useState(0);
+  const handleClick = () => setCount(count + 1);
 
   return (
-    <>
+    <div>
       <h1>Hello React</h1>
-      <div className="card">
-        <button onClick={() => setCount(count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <button onClick={handleClick} type="button">
+        {' '}
+        {`count is ${count}`} /
+      </button>
+      <p>Edit src/App.tsx and save to test HMR</p>
+    </div>
   );
 }
+
+export default App;
