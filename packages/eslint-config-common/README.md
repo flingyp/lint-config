@@ -1,7 +1,21 @@
-# @flypeng/eslint-config-basic
+# @flypeng/eslint-config-common
 
-使用 `@eslint/js` 提供的推荐配置和自定义 ESLint 常用规则
+> 通用配置包，提供跨各种配置的共享功能和工具
 
-## 扩展包
+## 特性
 
-- [@eslint/js](https://github.com/eslint/eslint.git) ESLint 提供的 JavaScript 语言推荐配置。
+- 使用 TypeScript 重写
+- 支持 ESLint 扁平配置（Flat Config）
+- 提供更好的类型支持
+- 提供公共工具函数和类型
+
+## 功能
+
+- 通用工具函数
+- 共享配置
+- 类型定义
+
+## 依赖包
+
+- [local-pkg](https://github.com/antfu/local-pkg) - 用于检测本地包是否已安装
+- [globals](https://github.com/sindresorhus/globals) - 全局变量定义
