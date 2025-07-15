@@ -18,7 +18,7 @@ hello();
 ```jsx
 // This can be linted too if you add `.jsx` files to `overrides` in ESLint v7
 // or pass `--ext jsx` in ESLint v6.
-const div = <div className="jsx"></div>;
+const div = <div className="jsx" />;
 console.log(div);
 ```
 

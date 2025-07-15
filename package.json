@@ -29,7 +29,7 @@
     "@types/react-dom": "^18.3.7",
     "@types/stylelint": "^14.0.0",
     "eslint": "^9.31.0",
-    "prettier": "^3.6.0",
+    "prettier": "^3.6.2",
     "scss": "^0.2.4",
     "stylelint": "^16.21.0",
     "tsup": "^8.5.0",

@@ -6,7 +6,11 @@ import basicConfig from '@flypeng/eslint-config-basic';
 import typeScriptConfig from '@flypeng/eslint-config-typescript';
 import vueConfig from '@flypeng/eslint-config-vue';
 import reactConfig from '@flypeng/eslint-config-react';
-import { jsonConfig, markdownConfig } from '@flypeng/eslint-config-other';
+import {
+  jsonConfig,
+  markdownConfig,
+  importConfig,
+} from '@flypeng/eslint-config-other';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 
 const scopeFile = (files: string[], config: Linter.Config[]): Linter.Config[] =>
@@ -24,6 +28,8 @@ export default (): Linter.Config[] => {
   const lintReact = reactConfig();
 
   const eslintConfig: Linter.Config[] = [
+    ...lintBasic,
+    ...lintCommon,
     ...scopeFile(['**/*.json', '**/*.json5', '**/*.jsonc'], jsonConfig()),
     ...scopeFile(['**/*.md'], markdownConfig()),
   ];
@@ -54,7 +60,7 @@ export default (): Linter.Config[] => {
     eslintConfig.push(eslintConfigPrettier as Linter.Config);
   }
 
-  eslintConfig.push(...lintBasic, ...lintCommon);
+  eslintConfig.push(...importConfig());
 
   return eslintConfig;
 };

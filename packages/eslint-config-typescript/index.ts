@@ -1,7 +1,7 @@
-import tseslint from 'typescript-eslint';
+import { configs } from 'typescript-eslint';
 import { Linter } from 'eslint';
 
-const config = tseslint.configs.recommended as Linter.Config[];
+const config = configs.recommended as Linter.Config[];
 
 export default (): Linter.Config[] =>
   config.concat({

@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import './App.vue';
+import React from 'react';
+import fs from 'fs';
 
 defineProps({
   name: {

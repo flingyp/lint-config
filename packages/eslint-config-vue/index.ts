@@ -2,7 +2,7 @@ import { Linter } from 'eslint';
 import pluginVue from 'eslint-plugin-vue';
 import globals from 'globals';
 import vueParser from 'vue-eslint-parser';
-import typescriptEslint from 'typescript-eslint';
+import { parser } from 'typescript-eslint';
 
 export default (): Linter.Config[] => [
   ...pluginVue.configs['flat/recommended'],
@@ -15,7 +15,7 @@ export default (): Linter.Config[] => [
       globals: globals.browser,
       parser: vueParser,
       parserOptions: {
-        parser: typescriptEslint.parser,
+        parser,
       },
     },
   },

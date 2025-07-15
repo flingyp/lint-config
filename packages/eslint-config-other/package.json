@@ -21,8 +21,13 @@
   },
   "dependencies": {
     "@eslint/markdown": "^7.0.0",
+    "@typescript-eslint/parser": "^8.37.0",
     "eslint": "^9.29.0",
-    "eslint-plugin-jsonc": "^2.20.1"
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-import-x": "^4.16.1",
+    "eslint-plugin-jsonc": "^2.20.1",
+    "typescript-eslint": "^8.37.0"
   },
   "scripts": {
     "build": "tsup --minify",
