@@ -25,6 +25,6 @@
   "scss.validate": false,
   "stylelint.enable": true,
   "stylelint.validate": ["css", "less", "scss", "sass", "vue", "postcss"],
-  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": ["flingyp", "flypeng", "stylelint"]
 }

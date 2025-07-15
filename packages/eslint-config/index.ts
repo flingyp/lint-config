@@ -9,8 +9,8 @@ import reactConfig from '@flypeng/eslint-config-react';
 import otherConfig from '@flypeng/eslint-config-other';
 import prettierConfig from 'eslint-config-prettier';
 
-const scopeFile = (config: any, files: string[]): Linter.Config[] =>
-  config.map((item) => ({
+const scopeFile = (files: string[], config: any): Linter.Config[] =>
+  config.map((item: Linter.Config) => ({
     ...item,
     files,
   })) as Linter.Config[];
@@ -23,35 +23,29 @@ const lintReact = reactConfig();
 const { jsonConfig: lintJson, markdownConfig: lintMd } = otherConfig();
 
 const eslintConfig: Linter.Config[] = [
-  ...scopeFile(lintJson, ['**/*.json', '**/*.json5', '**/*.jsonc']),
-  ...scopeFile(lintMd, ['**/*.md']),
+  ...scopeFile(['**/*.json', '**/*.json5', '**/*.jsonc'], lintJson),
+  ...scopeFile(['**/*.md'], lintMd),
 ];
 
 if (isPackageExists('typescript')) {
   eslintConfig.push(
-    ...scopeFile(lintTypeScript, [
-      '**/*.ts',
-      '**/*.tsx',
-      '**/*.mts',
-      '**/*.cts',
-    ]),
+    ...scopeFile(
+      ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
+      lintTypeScript,
+    ),
   );
 }
 
 if (isPackageExists('vue')) {
-  eslintConfig.push(...scopeFile(lintVue, ['**/*.vue']));
+  eslintConfig.push(...scopeFile(['**/*.vue'], lintVue));
 }
 
 if (isPackageExists('react') && isPackageExists('react-dom')) {
   eslintConfig.push(
-    ...scopeFile(lintReact, [
-      '**/*.js',
-      '**/*.jsx',
-      '**/*.mjs',
-      '**/*.cjs',
-      '**/*.ts',
-      '**/*.tsx',
-    ]),
+    ...scopeFile(
+      ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs', '**/*.ts', '**/*.tsx'],
+      lintReact,
+    ),
   );
 }
 

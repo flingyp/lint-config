@@ -4,5 +4,4 @@
 
 ## 扩展包
 
-- [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint) 提供了针对 TypeScript 文件的代码检查。
-- [@typescript-eslint/parser](https://github.com/ota-meshi/jsonc-eslint-parser) ESLint 针对 TypeScript 文件的解析器。
+- [typescript-eslint](https://typescript-eslint.io/getting-started) ESLint 新的 "扁平化" 配置格式的快速入门指南，旨在帮助您尽快使用推荐的规则对 TypeScript 代码进行代码检查
