@@ -17,6 +17,8 @@ if (isPackageExists('vue')) {
     extendsList.push('stylelint-config-standard-scss');
 }
 
+extendsList.push('stylelint-config-html');
+
 export default {
   cache: false,
   fix: true,
