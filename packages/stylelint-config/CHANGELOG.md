@@ -1,5 +1,11 @@
 # @flypeng/stylelint-config
 
+## 2.0.2
+
+### Patch Changes
+
+- chore(stylelint): 更新 Stylelint 配置，新增类似 HTML 的内容的支持
+
 ## 2.0.1
 
 ### Patch Changes
