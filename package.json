@@ -10,11 +10,11 @@
     "eslint:fix": "pnpm run build && eslint . --fix",
     "stylelint:lint": "pnpm run stylelint:build && stylelint \"**/*.{css,scss,vue}\"",
     "stylelint:fix": "pnpm run stylelint:build && stylelint \"**/*.{css,scss,vue}\" --fix",
+    "stylelint:build": "pnpm --filter=@flypeng/stylelint-config build",
     "lint": "prettier . --write && eslint . && stylelint \"**/*.{css,scss,vue}\"",
     "lint:fix": "prettier . --write && eslint . --fix && stylelint --fix \"**/*.{css,scss,vue}\"",
     "changeset": "npx changeset && npx changeset version",
     "release": "pnpm publish -r --access public",
-    "stylelint:build": "pnpm --filter=@flypeng/stylelint-config build",
     "build": "pnpm run -r build",
     "dev": "pnpm run -r dev"
   },

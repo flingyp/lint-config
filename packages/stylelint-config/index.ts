@@ -3,7 +3,8 @@ import type { Config } from 'stylelint';
 
 const extendsList: string[] = ['stylelint-config-standard'];
 
-if (isPackageExists('scss')) extendsList.push('stylelint-config-standard-scss');
+extendsList.push('stylelint-config-rational-order');
+extendsList.push('stylelint-prettier/recommended');
 
 if (isPackageExists('vue')) {
   if (isPackageExists('scss')) {
@@ -11,10 +12,10 @@ if (isPackageExists('vue')) {
   } else {
     extendsList.push('stylelint-config-recommended-vue');
   }
+} else {
+  if (isPackageExists('scss'))
+    extendsList.push('stylelint-config-standard-scss');
 }
-
-extendsList.push('stylelint-config-rational-order');
-extendsList.push('stylelint-prettier/recommended');
 
 export default {
   cache: false,
