@@ -1,5 +1,11 @@
 # @flypeng/stylelint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- chore(stylelint): 更新 Stylelint 配置，新增 postcss-html 和 postcss-scss 依赖，优化依赖版本
+
 ## 2.0.0
 
 ### Major Changes
