@@ -1,5 +1,21 @@
 # @flypeng/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- chore: update packages
+
+### Patch Changes
+
+- Updated dependencies
+  - @flypeng/eslint-config-typescript@3.0.0
+  - @flypeng/eslint-config-common@1.0.0
+  - @flypeng/eslint-config-basic@3.0.0
+  - @flypeng/eslint-config-other@3.0.0
+  - @flypeng/eslint-config-react@3.0.0
+  - @flypeng/eslint-config-vue@3.0.0
+
 ## 2.0.5
 
 ### Patch Changes

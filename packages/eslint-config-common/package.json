@@ -1,7 +1,7 @@
 {
   "name": "@flypeng/eslint-config-common",
   "type": "module",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "flingyp's common config of Common",
   "author": "flingyp <flingyp@163.com> (https://github.com/flingyp/)",
   "license": "MIT",

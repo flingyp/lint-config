@@ -1,5 +1,11 @@
 # @flypeng/stylelint-config
 
+## 2.0.0
+
+### Major Changes
+
+- chore: update packages
+
 ## 1.0.7
 
 ### Patch Changes

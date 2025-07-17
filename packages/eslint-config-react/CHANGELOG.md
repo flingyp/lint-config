@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-react
 
+## 3.0.0
+
+### Major Changes
+
+- chore: update packages
+
 ## 2.0.5
 
 ### Patch Changes
