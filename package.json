@@ -13,7 +13,7 @@
     "lint": "prettier . --write && eslint . && stylelint \"**/*.{css,scss,vue}\"",
     "lint:fix": "prettier . --write && eslint . --fix && stylelint --fix \"**/*.{css,scss,vue}\"",
     "changeset": "npx changeset && npx changeset version",
-    "release": "pnpm publish -r",
+    "release": "pnpm publish -r --access public",
     "stylelint:build": "pnpm --filter=@flypeng/stylelint-config build",
     "build": "pnpm run -r build",
     "dev": "pnpm run -r dev"

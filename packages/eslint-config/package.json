@@ -23,7 +23,6 @@
   "dependencies": {
     "@flypeng/eslint-config-basic": "workspace:^",
     "@flypeng/eslint-config-common": "workspace:^",
-    "@flypeng/eslint-config-javascript": "workspace:^",
     "@flypeng/eslint-config-other": "workspace:^",
     "@flypeng/eslint-config-react": "workspace:^",
     "@flypeng/eslint-config-typescript": "workspace:^",
