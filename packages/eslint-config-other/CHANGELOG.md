@@ -1,5 +1,17 @@
 # @flypeng/eslint-config-other
 
+## 3.0.1
+
+### Patch Changes
+
+- chore(eslint-config-other): 移除不必要的依赖，更新 ESLint 配置以支持 import 语句，优化 TypeScript 支持
+
+## 3.0.1
+
+### Patch Changes
+
+- chore(eslint-config-other): 移除不必要的依赖，更新 ESLint 配置以支持 import 语句，优化 TypeScript 支持
+
 ## 3.0.0
 
 ### Major Changes

@@ -1,9 +1,8 @@
+import { Linter } from 'eslint';
 import eslintPluginJsonc from 'eslint-plugin-jsonc';
 import markdown from '@eslint/markdown';
-import { Linter } from 'eslint';
+import importPlugin from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
-import { importX } from 'eslint-plugin-import-x';
-import tsParser from '@typescript-eslint/parser';
 
 export const jsonConfig = (): Linter.Config[] => [
   ...eslintPluginJsonc.configs['flat/recommended-with-jsonc'],
@@ -23,18 +22,24 @@ export const markdownConfig = (): Linter.Config[] => [
 
 export const importConfig = (): Linter.Config[] =>
   tseslint.config(
-    importX.flatConfigs.recommended,
-    importX.flatConfigs.typescript,
     {
-      files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+      files: ['**/*.{js,mjs,cjs}'],
       languageOptions: {
-        parser: tsParser,
         ecmaVersion: 'latest',
         sourceType: 'module',
       },
+      extends: [importPlugin.flatConfigs.recommended],
+    },
+    {
+      files: ['**/*.{ts,tsx}'],
+      extends: [
+        importPlugin.flatConfigs.recommended,
+        importPlugin.flatConfigs.typescript,
+      ],
+    },
+    {
       rules: {
-        'import-x/no-dynamic-require': 'warn',
-        'import-x/no-nodejs-modules': 'warn',
+        'import/no-unresolved': 'off',
       },
     },
   ) as Linter.Config[];
