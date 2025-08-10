@@ -16,6 +16,10 @@ export default (): Linter.Config[] => [
       parser: vueParser,
       parserOptions: {
         parser,
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true,
+        },
       },
     },
   },
