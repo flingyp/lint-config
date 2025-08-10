@@ -1,5 +1,11 @@
 # @flypeng/eslint-config-vue
 
+## 3.0.1
+
+### Patch Changes
+
+- chore(eslint-config-vue): 更新 ESLint 配置，添加 sourceType 和 JSX 支持
+
 ## 3.0.0
 
 ### Major Changes
