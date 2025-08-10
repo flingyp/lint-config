@@ -139,6 +139,7 @@ export default {
   "less.validate": false,
   "scss.validate": false,
   "stylelint.enable": true,
+  "stylelint.configFile": "../stylelint.config.mjs",
   "stylelint.validate": ["css", "less", "scss", "sass", "vue", "postcss"]
 }
 ```
